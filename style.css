@@ -124,6 +124,11 @@
     display: none;
   }
   @media (max-width: 952px){
+
+
+    
+
+    
     label.logo{
       font-size: 30px;
       padding-left: 50px;
@@ -136,6 +141,7 @@
     .checkbtn{
       display: block;
     }
+    
     ul{
       position: fixed;
       width: 40%;
@@ -330,7 +336,12 @@ img{
 .aboutright1 p{
   padding-left: 2em;
 
-} 
+}
+
+
+
+
+
 
   }
 
@@ -462,4 +473,103 @@ img{
   }
   .hd{
     color: #01CC32;
-  } }
+  }
+
+
+/* PORTFOLIO RESPONSIVE ON ACTUAL DEVICE */
+
+.portfolio{
+  padding: 1rem;
+  height: 100%;
+  width: 100%;
+  background-color:#03010E;
+  display: block;
+}
+
+
+/* 
+
+.portfolion{
+  margin-left: 5rem;
+  padding: 3%;
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.portfolion>div {
+  background-color:#0b2fce;
+  width: 20rem;
+  padding: 10.1rem;
+  margin-left: 10rem;
+  height: 20rem;
+  margin-top: .5rem;
+  text-align: center;
+  font-size: 16px;
+} */
+}
+
+
+
+
+
+  /* PORTFOLIO PAGE */
+
+  .portfolio{
+    padding-top: 3rem;
+    height: 100%;
+    width: 100%;
+    background-color:#03010E;
+    display: block;
+  }
+
+
+  
+
+  .portfolion{
+    padding: 5rem;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 4rem;
+
+}
+  
+  .portfolion>div {
+    width: 21rem;
+    height: 21rem;
+    margin-top: .9rem;
+    font-size: 16px;
+  }
+  .photo{
+    height: 50%;
+  }
+
+  .portfolion p{
+    padding-left: -1rem;
+    padding-right: 2rem;
+
+  }
+
+
+  @media (max-width: 375px){
+  
+    .portfolio{
+    height: 100%;
+    width: 100%;
+    }
+
+
+    .portfolion{
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 4rem;
+
+}
+  
+  .portfolion>div {
+    width: 21rem;
+    height: 21rem;
+    margin-top: .9rem;
+    font-size: 16px;
+  }
+
+  }

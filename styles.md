@@ -27,3 +27,4 @@ The designs were created to the following widths:
 
 - Family: [Kabit](https://fonts.cdnfonts.com/css/kanit)
 - Weights: 400, 500, 700
+ 
