@@ -21,7 +21,7 @@ body{
   }
   .rightnav{
     border-bottom-left-radius: 3rem;
-    height: 5rem;
+    height: 4rem;
     background-color: #01CC32;
     top: 0;
     width: 10%;
@@ -33,14 +33,14 @@ body{
     float: right;
   }
   .rightnav ul li{
-    line-height: 70px;
+    line-height: 50px;
   }
   .rightnav ul li a{
+
     color: white;
     font-size: 12px;
     font-family: 'Kanit', sans-serif;
     font-weight: bold;
-    padding-top: 1rem;
     padding: 2rem;
     border-radius: 3px;
     text-transform: uppercase;
@@ -146,14 +146,36 @@ body{
 
   .allondash{
     display: flex;
+    height: 100%;
+    width: 100%;
+    /* background-color: #01CC32; */
   }
-  .allondash .leftnav{
-     background-color: green;
-     min-height: 100%;
-     width: 7rem;
+  .allondash .leftmenu{
+     background-color:#01CC32;
+     height: 80%;
+     width: 10rem;
+     margin-top:5rem;
      border-bottom-right-radius: 4rem;
+     float: left;
+     position: fixed;
 
   }
- 
+  .leftmenu ul li{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+
+    padding-top: 3rem;
+  }
+  li a{
+    list-style-type: none;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .photo1{
+    height: 40;
+    width: 100%;
+  }
 
   

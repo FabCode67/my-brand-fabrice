@@ -1,0 +1,153 @@
+
+body{
+    background-color:#03010E
+}
+.nav{
+    height: 5rem;
+    top: 0;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background-color: #03010E;
+  
+  }
+  
+  .leftnav{
+    height: 5rem;
+    top: 0;
+    width: 90%;
+    background-color: #03010E;
+  
+  }
+  .rightnav{
+    border-bottom-left-radius: 3rem;
+    height: 4rem;
+    background-color: #01CC32;
+    top: 0;
+    width: 10%;
+  }
+
+
+  
+  .rightnav ul{
+    float: right;
+  }
+  .rightnav ul li{
+    line-height: 50px;
+  }
+  .rightnav ul li a{
+
+    color: white;
+    font-size: 12px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    padding: 2rem;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+
+  }
+
+  ul li{
+    list-style-type: none;
+
+  }
+  label.logo{
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+
+
+  .allondash .leftmenu{
+    background-color:#01CC32;
+    height: 80%;
+    width: 10rem;
+    margin-top:5rem;
+    border-bottom-right-radius: 4rem;
+    float: left;
+    position: fixed;
+
+ }
+ .leftmenu ul li{
+   color: #fff;
+   font-size: 15px;
+   font-weight: 700;
+
+   padding-top: 3rem;
+ }
+ li a{
+   list-style-type: none;
+   text-decoration: none;
+   color: #fff;
+ }
+
+.dashcontent{
+    display: flex;
+    flex-wrap: wrap;
+}
+.dashcontent>div{
+    background-color: #01CC32;
+    box-shadow: 0px 0px 40px black;
+    border-radius: 2rem;
+    height: 0rem;
+    width: 6rem;
+    padding: 3rem;
+    margin-left: 6rem;
+    margin-top: 3rem;
+    text-align: center;
+    align-items: center;
+
+}
+
+
+
+
+
+  .blogdash{
+    display: flex;
+    flex-wrap: wrap;
+}
+.blogdash>div{
+    height: 8rem;
+    width: 24rem;
+    margin-left: 4rem;
+    margin-top: 4rem;
+    
+}
+
+
+.dash{
+    height: 32rem;
+    width: 60rem;
+    align-self: center;
+    margin: auto;
+    margin-top: 1rem;
+    padding: 2rem;
+    box-shadow: 0px 0px 40px black;
+    color: #fff;
+  }
+.allblog img{
+    height: 40%;
+    width: 100%;
+}
+  .thisdash{
+    display: flex;
+  }
+
+ .pic{
+ width: 30px;
+ height: 100px;
+}
+
+img{
+    height:100%;
+    width: 100%;
+}
+button{
+    color: #fff;
+    background-color: green;
+}
