@@ -516,7 +516,7 @@ img{
 
   .portfolio{
     padding-top: 3rem;
-    height: 100%;
+    height: 65rem;
     width: 100%;
     background-color:#03010E;
     display: block;
@@ -529,7 +529,7 @@ img{
     padding: 5rem;
     display: flex;
     flex-wrap: wrap; 
-    gap: 4rem;
+    gap: 3rem;
 
 }
   
@@ -553,6 +553,7 @@ img{
   @media (max-width: 375px){
   
     .portfolio{
+    padding-top: -3rem;
     height: 100%;
     width: 100%;
     }
@@ -561,15 +562,175 @@ img{
     .portfolion{
     display: flex;
     flex-wrap: wrap; 
-    gap: 4rem;
+    gap: 1rem;
 
 }
   
   .portfolion>div {
     width: 21rem;
     height: 21rem;
-    margin-top: .9rem;
     font-size: 16px;
   }
 
+  .contact{
+    display: flex;
+    flex-direction: column-reverse;
   }
+
+  .leftcontact{
+    padding: 0rem;
+
+    max-width: fit-content;
+    height: 100%;
+  }
+  .rightcontact{
+
+    width: 100%;
+    height: 100%;
+  }
+
+  }
+
+
+
+
+  .blogs{
+    height: 65rem;
+    width: 100%;
+    background-color: #363636;
+  }
+
+  .allcontact{
+    height: 35rem;
+    width: 100%;
+  }
+  .contact{
+    height: 29rem;
+    width: 100%;
+    display: flex;
+  }
+
+
+
+
+
+  /* CONTACT PAGE */
+
+
+  .leftcontact{
+    padding: 5rem;
+    width: 40%;
+    height: 100%;
+  }
+
+  
+  .rightcontact{
+    padding-left: 3rem;
+    padding-top: 5rem;
+    width: 60%;
+    height: 100%;
+  }
+
+  input[type="text"] {
+    border: 0;
+    background-color: #03010E;
+    border-bottom: 1px solid #01CC32;
+    outline: 0;
+    width: 85%;
+    padding-top: 1rem;
+    color: #fff;
+  }
+  .leftcontact h3{
+    padding-bottom: 3rem;
+    color: #01CC32;
+  }
+
+  
+  #contact{
+    background-color: #03010E;
+  }
+
+  textarea{
+    border: 0;
+    background-color: #03010E;
+    border-bottom: 1px solid #01CC32;
+    outline: 0;
+    width: 85%;
+    height: 5rem;
+    padding-top: 1rem;
+
+    color: #fff;
+  }
+
+
+  
+  input[type="button"] {
+    border: 0;
+    background-color: #03010E;
+    border-bottom: 1px solid #01CC32;
+    outline: 0;
+    margin-left: 33rem;
+    width: 15%;
+    padding-top: 1rem;
+    color:#fff;
+
+  }
+
+
+
+  .footer{
+    width: 100%;
+    height: 6rem;
+    /* background-color: aqua; */
+  }
+
+  .linec{
+    background-color: #01CC32;
+    width: 87%;
+    margin-left: 4rem;
+    margin-right: -3rem;
+    height: .1rem;
+  }
+
+
+  .allmainf{
+    justify-content: space-between;
+    padding-left: 3rem;
+    display: flex;
+    /* background-color: indianred; */
+    height: 3rem;
+    padding-right: 7rem;
+    padding-top: .2rem;
+    width: 100%;
+
+  }
+
+
+  .mainf ul li{
+    display: inline;
+    padding-left: 2rem;
+  }
+
+
+  .mainf i{
+    padding-right: .2rem;
+  }
+
+
+  .iconsf ul li{
+    display: inline;
+    padding-left: 1rem;
+
+  }
+
+
+  input[type="text"] {
+    border: 0;
+    background-color: #03010E;
+    border-bottom: 1px solid #01CC32;
+    outline: 0;
+    width: 85%;
+    padding-top: 1rem;
+    color: #fff;
+  }
+  
