@@ -20,28 +20,30 @@ body{
   
   }
   .rightnav{
-    border-bottom-left-radius: 3rem;
-    height: 4rem;
+    border-bottom-left-radius: 2rem;
+    height: 3rem;
     background-color: #01CC32;
     top: 0;
-    width: 10%;
+    width: 8%;
+    padding-right: 1rem;
   }
 
 
   
   .rightnav ul{
-    float: right;
+    align-items: center;
+    text-align: center;
   }
   .rightnav ul li{
-    line-height: 50px;
+    text-align: center;
   }
-  .rightnav ul li a{
+ ul li a{
 
     color: white;
     font-size: 12px;
     font-family: 'Kanit', sans-serif;
     font-weight: bold;
-    padding: 2rem;
+    /* padding: 2rem; */
     border-radius: 3px;
     text-transform: uppercase;
     text-decoration: none;
@@ -63,8 +65,8 @@ body{
 
 
   .login{
-    height: 30rem;
-    width: 35rem;
+    height: 30%;
+    width: 35%;
     align-self: center;
     margin: auto;
     margin-top: 1rem;
@@ -177,5 +179,37 @@ body{
     height: 40;
     width: 100%;
   }
+
+
+  @media (max-width: 858px){
+    
+  .leftnav{
+  
+    width: 50%;
+  
+  }
+  .rightnav{
+  
+    width: 50%;
+    padding-right: 1rem;
+  }
+    label.logo{
+    color: white;
+    font-size: 20px;
+    line-height: 60px;
+    padding: 0 0px;
+  }
+   .login{
+    height: 30rem;
+    width: 35rem;
+    align-self: center;
+    margin: auto;
+    margin-top: 15%;
+    padding: 2rem;
+    font-size: 20px;
+ 
+  }
+  }
+
 
   
