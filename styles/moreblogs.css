@@ -4,45 +4,54 @@
 }
 body{
     background-color: #03010E;
+    font-family: 'Kanit', sans-serif;
     
 }
-.more{
-    display: flex;
-    /* background-color: blue; */
+
+img{
     height: 100%;
+    width: 100%;
+}
+/* .more{
+    display: flex; */
+    /* background-color: blue; */
+    /* height: 100%;
     width: 80%;
     margin-left: 7rem;
     justify-content: space-between;
-}
+} */
 
-.more>div{
-    display: flex;
+/* .more>div{
+    display: flex; */
     /* background-color: rgb(122, 122, 138); */
-    height: 100%;
-    width: 49%;
-}
+    /* height: 100%;
+    width: 49%; */
+/* }
 .left{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; */
     /* background-color: darkgrey; */
-}
-.right{
+/* } */
+/* .right{
     display: flex;
-    flex-direction: column;
+    flex-direction: column; */
     /* background-color: darkviolet; */
-}
-.left div{
-    width: 100%;
+/* } */
+/* .left div{ */
+    /* width: 100%; */
     /* background-color: rgb(91, 190, 25); */
-}
+/* } */
 /* .pic{
    height: 20rem;
     background-color: crimson;
 } */
 
-.right>div{
-    
-}
+/* .right>div{
+    height: 25%;
+    width: 100%;
+    margin-top: 1rem;
+    background-color: ;
+} */
 
 /* .others{
     background-color: chartreuse;
@@ -80,4 +89,70 @@ body{
     
 }
  */
+
+
+.allcont{
+    /* background-color: blue; */
+    margin-top: 5rem;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding :1rem;
+   justify-content: space-between;
+}
+
+p{
+    color: white;
+}
+
+.allcont>div{
+ height: 100%;
+ width: 45%;
+ /* background-color: green; */
+}
+
+.right{
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    justify-content: space-between;
+}
+
+.right>div{
+    /* background-color: aqua; */
+    height: 48%;
+    width: 100%;
+}
+.left{
+     /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    justify-content: space-between;
+}
+.left>div{
+    /* background-color: aqua; */
+    height: 19%;
+    width: 100%;
+}
+.blogs{
+     /* background-color: yellow; */
+    display: flex;
+    padding-top: 1rem;
+    justify-content: space-between;
+}
+.blogs>div{
+    height: 100%;
+}
+
+.pic{
+    width: 40%;
+    /* background-color: aqua; */
+}
+.desc{
+    width: 58%;
+    /* background-color: chocolate; */
+}
+
 
