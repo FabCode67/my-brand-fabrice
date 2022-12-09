@@ -5,36 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>addblog</title>
     <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="dashboard.css">
     
 </head>
-<body>
-    <div class="nav">
-        <div class="leftnav"> 
-         <label for="" class="logo"> Fabrice</label>
-        </div>
-        <div class="rightnav">
-          <ul>
-            <li><a class="" href="#home">Logout</a></li>
-          </ul>
-        </div>
-      </div>
-     
-<div class="allondash">
-    <div class="leftmenu">
-    <ul>
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="addblog.html">ADD BLOG</a></li>
-      <li><a href="dashboard.html">BLOGS</a></li>
-      <li><a href="">QUERIES</a></li>
-    </ul>  
-    </div>
+<body><div class="sidebar">
+  <a class="active" href="#home" id="uniq">Fabrice</a>
+  <a href="#news">Dashboard</a>
+  <a href="#contact">Blogs</a>
+  <a href="#about">Add blog</a>
+  <a href="#about">Log Out</a>
+</div>
+
         <div class="login">
             <div class="place">
     
                 <div class="hed"><h3>ADD BLOG</h3></div>
                 
                 <div class="change"> <input type="text" placeholder="Blog title"></div>
-                <div class="change"><input type="password" placeholder="Blog content"></div>
+                <div class="change"><input type="text" placeholder="Blog content"></div>
                 <div class="change"><input type="file" placeholder="UPLOAD PHOTO"></div>
                 <div class="change"><input type="button" value="POST"></div>
                
