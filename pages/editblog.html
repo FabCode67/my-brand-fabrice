@@ -4,43 +4,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>editblog</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="./../styles/login.css">
+    <link rel="stylesheet" href="./../styles/dashboard.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.cdnfonts.com/css/kanit-2" rel="stylesheet">
+                
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./../styles/addblog.css">
+
 </head>
-<body>
-    <div class="nav">
-        <div class="leftnav"> 
-         <label for="" class="logo"> Fabrice</label>
-        </div>
-        <div class="rightnav">
-          <ul>
-            <li><a class="" href="dashboard.html">Home</a></li>
-          </ul>
-        </div>
-      </div>
-    
-      <div class="allondash">
-        <div class="leftmenu">
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="addblog.html">ADD BLOG</a></li>
-          <li><a href="dashboard.html">BLOGS</a></li>
-          <li><a href="">QUERIES</a></li>
-        </ul>  
-        </div>
+<body><div class="sidebar">
+  <a class="active" href="" id="uniq">Fabrice</a>
+  <a href="dashboard.html">Dashboard</a>
+  <a href="./../index.html">Blogs</a>
+  <a href="addblog.html">Add blog</a>
+  <a href="login.html">Log Out</a>
+</div>
+
 
       <div class="login">
         <div class="place">
 
             <div class="hed"><h3>EDIT BLOG</h3></div>
             
-            <div class="change"> <input type="text" placeholder="Edit blog title"></div>
-            <div class="change"><input type="text" placeholder="Edit blog content"></div>
-            <div class="change"><input type="file" placeholder="UPLOAD PHOTO"></div>
+            <div class="change"> <input type="text" value="Whay ict based technolohy"></div>
+            <section>
+              <div class="row">
+                  <div class="col">
+                      <div class="first box">
+                          <input id="font-size" type="number" value="16" min="1" max="100" onchange="f1(this)">
+                      </div>
+                      <div class="second box">
+                          <button type="button" onclick="f2(this)">
+                              <i class="fa-solid fa-bold"></i>
+                          </button>
+                          <button type="button" onclick="f3(this)">
+                              <i class="fa-solid fa-italic"></i>
+                          </button>
+                          <button type="button" onclick="f4(this)">
+                              <i class="fa-solid fa-underline"></i>
+                          </button>
+                      </div>
+                      <div class="third box">
+                          <button type="button" onclick="f5(this)">
+                              <i class="fa-solid fa-align-left"></i>
+                          </button>
+                          <button type="button" onclick="f6(this)">
+                              <i class="fa-solid fa-align-center"></i>
+                          </button>
+                          <button type="button" onclick="f7(this)">
+                              <i class="fa-solid fa-align-right"></i>
+                          </button>
+                      </div>
+                      <div class="fourth box">
+                          <button type="button" onclick="f8(this)">aA</button>
+                          <button type="button" onclick="f9()">
+                              <i class="fa-solid fa-text-slash"></i>
+                          </button>
+                          <input type="color" onchange="f10(this)">
+                      </div>
+                  </div>
+              </div>
+              <br>
+                      <textarea id="textarea1" placeholder="Your text here ">
+                        Technology has made it obligatory for people to change 
+                    the way they perform a task.
+                      </textarea>
+              
+          </section>
+                      <div class="change"><input type="file" placeholder="UPLOAD PHOTO"></div>
             <div class="change"><input type="button" value="UPDATE"></div>
            
            
         </div>
       
       </div>
+      <script src="./../script.js"></script>
 </body>
 </html>
