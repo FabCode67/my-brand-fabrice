@@ -65,8 +65,8 @@ body{
 
 
   .login{
-    height: 30%;
-    width: 35%;
+    height: 34rem;
+    width: 35rem;
     align-self: center;
     margin: auto;
     margin-top: 1rem;
@@ -200,7 +200,7 @@ body{
     padding: 0 0px;
   }
    .login{
-    height: 30rem;
+    height: 35rem;
     width: 35rem;
     align-self: center;
     margin: auto;
