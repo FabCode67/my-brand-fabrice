@@ -224,10 +224,7 @@
     .rightnav2 ul li a{
       font-size: 15px;
     }
-    a:hover,a.active{
-      font-size: 20px;
-      background: none;
-    }
+
     #check:checked ~ ul{
       right: -1rem;
     }
