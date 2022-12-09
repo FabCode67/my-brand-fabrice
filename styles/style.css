@@ -778,9 +778,8 @@ img{
   height: 15rem;
 }
   .footer{
-    width: 87%;
+    width: 100%;
     height: 6rem;
-    /* background-color: aqua; */
   }
 
   .linec{
@@ -807,6 +806,7 @@ img{
 
 
   .mainf ul li{
+    color: #fff;
     display: inline;
     padding-left: 2rem;
   }
@@ -818,6 +818,8 @@ img{
 
 
   .iconsf ul li{
+    color: #fff;
+
     display: inline;
     padding-left: 1rem;
 
