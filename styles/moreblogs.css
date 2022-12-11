@@ -17,9 +17,10 @@ img{
     /* background-color: blue; */
     margin-top: 5rem;
     height: 100%;
-    width: 100%;
+    flex-basis: 80%;
     display: flex;
-    padding :1rem;
+    padding-left: 6rem;
+    padding-right: 5rem;    
    justify-content: space-between;
 }
 
@@ -29,10 +30,12 @@ p{
 
 .allcont>div{
  height: 100%;
- width: 45%;
+ flex-basis: 49%;
  /* background-color: green; */
 }
-
+.right .up{
+    flex-basis: 55;
+}
 .right{
     /* background-color: yellow; */
     display: flex;
@@ -69,12 +72,28 @@ p{
 }
 
 .pic{
-    width: 40%;
+    width: 30%;
     /* background-color: aqua; */
 }
 .desc{
-    width: 58%;
+    width: 62%;
     /* background-color: chocolate; */
+}
+
+
+@media (max-width: 858px){
+    .allcont{
+        /* background-color: blue; */
+        margin-top: 1rem;
+        height: 100%;
+        flex-basis: 80%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0rem;
+        padding-right: 0rem;    
+       justify-content: space-between;
+    }
+
 }
 
 
