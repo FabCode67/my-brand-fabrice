@@ -86,6 +86,7 @@
     height: 100%;
     width:100%;
  }
+
   .rightnav ul{
     float: right;
     margin-right: 15px;
@@ -104,8 +105,6 @@
     padding-top: 3rem;
     border-radius: 3px;
     text-transform: uppercase;
-    
-
   }
   a.active,a:hover{
     font-size: 30px;
@@ -123,11 +122,12 @@
   #check{
     display: none;
   }
+
+  .linec{
+    margin-top: 30rem;
+  }
   @media (max-width: 952px){
 
-
-   
-    
     label.logo{
       font-size: 30px;
       padding-left: 50px;
@@ -155,150 +155,14 @@
     width: 100%;
     background-color: #01CC32;
     float: right;
-    margin-top: 6rem;
+    margin-top: 4rem;
   }
 
   .links i{
     float: right;
     padding: .5rem;
   }
- 
-  @media (max-width: 1204px){
-.lineh{
-  margin-top: 2rem;
-}
-.lefth{
-  padding-top: 2rem;
-}
-.aboutleft1 p{
-  padding-top: 3rem;
-}
 
-
-.courseleft{
-  padding-top: 2rem;
-}
-
-.courseleft2{
-  margin-top: 3rem;
-}
-
-.courseright{
-  margin-top: -40%;
-  float: right;
-}
-.courseright2{
-  padding-top: 2rem;
-  float: right;
-}
-
-
-.flex-container {
-  padding: 0%;
-  display: flex;
-  flex-wrap: wrap; 
- } 
-
-.flex-container>div {
-  background-color:#01CC32;
-  width: 120px;
-  margin-left: 30px;
-  height: 3rem;
-  margin-top: .5rem;
-  text-align: center;
-  font-size: 16px;
-}
-.aboutright1 p{
-  padding-left: 2em;
-
-}
-
-
-
-
-
-
-  }
-
-
-
-
-
-  /* aboutpage */
-  @media (min-width: 1366px){
-
-   .about{
-    padding-top: 3rem;
-    height: 37rem;
-    width: 100%;
-    background-color: #03010E; 
-    display: flex;
-  } 
-
-  .aboutleft{
-    display: block; 
-     height: 100%;
-    width: 50%;
-    display: block;
-   }
-  .aboutright{
-    display: block; 
-     height: 100%;
-    width: 50%;
-  }
- 
-  .aboutleft .aboutleft1{
-    padding-top: 5rem;
-    padding-left: 6rem;
-    padding-right: 3rem;
-    height: 43%;
-    width: 100%;
-  }
-  .aboutleft .aboutleft2{
-    padding-top: 5rem;
-    padding-left: 6rem;
-    padding-right: 3rem;
-    height: 57%;
-    width: 100%;
-  }
-
-  .aboutright .aboutright1{
-    padding-top: 7rem;
-    padding-left: 4rem;
-    padding-right: 3rem;
-    height: 50%;
-    width: 100%;
-  }
-  .aboutright .aboutright2{
-    padding-top: 1rem;
-    padding-left: 6rem;
-    padding-top: 6.5%;
-    padding-right: 4rem;
-    height: 50%;
-    width: 100%;
-  }
-
-  .aboutleft1 p{
-    padding-top: 3rem;
-  }
-
-
-  .courseleft{
-    padding-top: 2rem;
-  }
-  
-  .courseleft2{
-    margin-top: 2rem;
-  }
-
-  .courseright{
-    margin-top: -23%;
-    float: right;
-  }
-  .courseright2{
-    padding-top: 2rem;
-    float: right;
-  }
 
   .flex-container {
     padding: 0%;
@@ -322,63 +186,151 @@
 
   } 
 
-
-  
   .aboutleft1 p{
     padding-top: 3rem;
   }
   .aboutright1 p{
     padding-top: 0rem;
   }
-
-  .coursel{
-    padding-top: 2rem;
-  }
-  
-  .coursel2{
+  /* .lineh{
     margin-top: 2rem;
-  }
-
-  .courser{
-    margin-top: -23%;
-    float: right;
-  }
-  .courser2{
+  } */
+  .lefth{
     padding-top: 2rem;
-    float: right;
   }
-  .hd{
-    color: #01CC32;
+  .aboutleft1 p{
+    padding-top: 3rem;
   }
-
-
-/* PORTFOLIO RESPONSIVE ON ACTUAL DEVICE */
-
-.portfolio{
-  padding: 1rem;
-  height: 100%;
-  width: 100%;
-  background-color:#03010E;
-  display: block;
-}
-}
-
-  /* PORTFOLIO PAGE */
-
-  .portfolion{
-    padding: 5rem;
-    display: flex;
-    flex-wrap: wrap; 
-    gap: 3rem;
-
-}
   
-  .portfolion>div {
-    width: 20rem;
-    height: 21rem;
-    margin-top: .9rem;
-    font-size: 16px;
-  }
+
+  /* ABOUT PAGE */
+
+.refer{
+  background-color: #03010E;
+  color: #fff;
+  padding-left: 5rem;
+  padding-right: 3rem;
+  height: 38rem;
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-between;
+}
+
+.refer>div{
+    height: 100%;
+    flex-basis: 49.5%;
+    box-shadow: 0px 0px 40px black;
+
+}
+
+.referleft{
+  display: flex;
+  flex-direction: column;
+  padding: .5rem;
+  justify-content: space-between;
+}
+
+.referleft>div{
+  flex-basis: 49.5%;
+}
+
+.social{
+  display: flex;
+  flex-direction: column;
+  padding: .5rem;
+  justify-content: space-between;
+}
+.social>div{
+  /* All here*/
+}
+.top{
+  color: #01CC32;
+  flex-basis: 15%;
+}
+
+.socialup{
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 38%;
+  padding: .5rem;
+}
+
+.socialup>div{
+  background-color: #01CC32;
+  padding-top: 2rem;
+  text-align: center;
+  flex-basis: 30%;
+}
+.socialdown{
+  flex-basis: 38%;
+}
+.socialdown{
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 38%;
+  padding: .5rem;
+}
+
+.socialdown>div{
+  text-align: center;
+  padding-top: 2rem;
+  flex-basis: 30%;
+  background-color: #01CC32;
+}
+
+.generalskills{
+  display: flex;
+  flex-direction: column;
+  padding: .2rem;
+  justify-content: space-between;
+}
+
+.generalskills>div{
+}
+
+.skillrig{
+  display: flex;
+  padding: .25rem;
+  flex-basis: 39.5%;
+  justify-content: space-between;
+}
+.skillrig>div{
+  box-shadow: 0px 0px 40px black;
+  flex-basis: 49.5%;  
+  text-align: center;
+  padding-top: 2rem;
+
+}
+
+.skilllef{
+  display: flex;
+  padding: .25rem;
+  flex-basis: 39.5%;
+  justify-content: space-between;
+}
+.skilllef>div{
+  padding-top: 2rem;
+  text-align: center;
+  box-shadow: 0px 0px 40px black;
+  flex-basis: 49.5%;
+}
+
+.generalrefer .abt{
+  margin-top: 6rem;
+  padding-right: 3rem;
+  line-height: 2rem;
+  
+}
+
+.tops{
+  color: #01CC32;
+  flex-basis: 15%;
+}
+
+.hd{
+  color: #01CC32;
+}
+
   .photo{
     height: 45%;
   }
@@ -389,39 +341,6 @@
 
   }
 
-
-
-
-
-
-  
-  /* CONTACT PAGE */
-
-  /* .allcontact{
-    height: 35rem;
-    width: 100%;
-  }
-  .contact{
-    margin-left: 5rem;
-    height: 29rem;
-    display: flex;
-    width: 60rem;
-    background-color: #01CC32;
-  } */
-
-
-
-
-
-
-
-  /* .leftcontact{
-    padding: 5rem;
-    height: 100%;
-    width: 30rem;
-  }
-
-  
   .rightcontact{
     padding-left: 3rem;
     padding-top: 5rem;
@@ -438,16 +357,7 @@
     padding-top: 1rem;
     color: #fff;
   }
-  /* .leftcontact h3{
-    padding-bottom: 3rem;
-    color: #01CC32;
-  }
-
-  
-  #contact{
-    background-color: #03010E;
-  } */
-
+ 
   textarea{
     border: 0;
     background-color: #03010E;
@@ -500,7 +410,6 @@
 }
 .allblog{
   display: flex;
-  /* background-color: rgb(43, 255, 0); */
   height: 100%;
   width: 100%;
 
@@ -534,29 +443,22 @@
     margin-right: -3rem;
     height: .1rem;
   }
-
-
   .allmainf{
   
     justify-content: space-between;
     margin-left: 3rem;
     display: flex;
-    /* background-color: indianred; */
     height: 3rem;
     padding-right: 7rem;
     padding-top: .2rem;
     width: 100%;
 
   }
-
-
-  .mainf ul li{
+ .mainf ul li{
     color: #fff;
     display: inline;
     padding-left: 2rem;
   }
-
-
   .mainf i{
     padding-right: .2rem;
   }
@@ -574,18 +476,15 @@
   input[type="text"] {
     border: 0;
     background-color: #03010E;
-    /* border-bottom: 1px solid #01CC32; */
     outline: 0;
     width: 85%;
     padding-top: 1rem;
     color: #fff;
   }
-  
 
   .allcontact{
     height: 35rem;
     width: 100%;
-    /* background-color: red; */
     background-color: #03010E;
     padding: 3rem;
     display: flex;
@@ -599,23 +498,19 @@
 
   .contact{
     align-self: center;
-    /* width: 100%; */
     padding: 3rem;
     height: 78%;
-    /* background-color: aqua; */
     display: flex;
     box-shadow: 0px 0px 40px black;
   }
 
   .leftcontact{
     padding: 3rem;
-    /* width: 45%; */
     flex-basis: 50%;
     height: 100%;
   }
   .rightcontact{
     padding: 3rem;
-    /* width: 55%; */
     flex-basis: 50%;
     height: 100%;
   }
@@ -628,7 +523,40 @@
 
   @media (max-width: 858px){
 
+    .refer{
+      padding: 1rem;
+      height: 60rem;
+      flex-direction: column-reverse;
+      justify-content: space-between;
+    }
+    
+    .refer>div{
+        flex-basis: 49.5%;    
+    }
 
+    .socialup>div{
+      text-align: left;
+      padding-top: 0rem;
+    }
+    .socialdown>div{
+      text-align: left;
+      padding-top: 0rem;
+    }
+    .skillrig>div{
+      text-align: left;
+      padding-top: 0rem;
+    }
+    .skilllef>div{
+      text-align: left;
+      padding-top: 0rem;
+    }
+    .generalrefer .abt{
+      margin-top: 2rem;
+      padding-right: 0rem;
+      line-height: 1.5rem;
+      
+    }
+    
     .footer{
       margin-top: 8rem;
       color: white;
@@ -659,11 +587,8 @@
       border-bottom: 1px solid #01CC32 ;
       outline: 0;
     }
- 
-
   .linec{
     margin-top: 5rem;
-
   }
  
     #ports{
@@ -672,24 +597,15 @@
     }
     #bolo{
       height: fit-content;
-      
-      /* background-color: lime; */
-    }
-
-    
-
+          }
      .allblog{
       display: flex;
-      /* background-color: rgb(43, 255, 0); */
       flex-direction: column;
-      
-    
+
     }
 
     .allblog>div{
-      
-      /* background-color: #01CC32; */
-      margin-top: 0rem;
+            margin-top: 0rem;
       flex-basis: 80%;
       max-height: fit-content;
       box-shadow: 0px 0px 40px black;
@@ -752,66 +668,7 @@ img{
   max-height: fit-content;
 }
 
-
-/* responsive about */
- 
-
-.about{
-  padding: 1rem;
-  height: 70rem;
-  width: 100%;
-  background-color:#03010E;
-  display: block;
-}
-
-.aboutleft{
-  display: block; 
-  /* background-color: darkcyan;  */
-  height: 35rem;
-  width: 100%;
-  display: block;
- } 
- .aboutleft .aboutleft1{
-  padding-left: 0rem;
-  padding-right: 0rem;
-  max-height: fit-content;
-  width: 100%;
-}
-
-.aboutleft .aboutleft2{
-  padding-top: 3rem;
-  padding-left: 0rem;
-  padding-right: 0rem;
-  max-height: fit-content;
-  width: 100%;
-} 
-
 .hd{
   color: #01CC32;
 } 
-
-.aboutright .aboutright2{
-  padding-top: 0rem;
-  padding-left: 0rem;
-  padding-top: 0%;
-  padding-right: 0rem;
-  height: 50%;
-  width: 100%; 
- }
-
-
-.aboutright .aboutright1{
-    padding-top: 0rem;
-    padding-left: 0rem;
-    padding-right: 0rem;
-    height: 50%;
-    width: 100%; 
-  }
-  .aboutright .aboutright2{
-    padding-left: 1.5rem;
-    padding-top: 6.5%;
-    padding-right: 0rem;
-    height: 50%;
-    width: 100%; 
-  }  
   }
