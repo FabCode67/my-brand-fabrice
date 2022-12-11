@@ -624,6 +624,9 @@
       text-align: center;
       transition: all .5s;
     }
+    .rightnav{
+      background-color: #03010E;
+    }
     .rightnav ul li{
       display: block;
       margin: 20px 0;
