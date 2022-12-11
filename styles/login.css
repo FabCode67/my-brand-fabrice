@@ -68,8 +68,8 @@ body{
     height: 34rem;
     width: 35rem;
     align-self: center;
-    margin: auto;
     margin-top: 1rem;
+    margin: auto;
     padding: 2rem;
     box-shadow: 0px 0px 40px black;
     color: #fff;
@@ -83,7 +83,7 @@ body{
 
   .place{
     padding-left: 5rem;
-    padding-top: 7rem;
+    padding-top: 2rem;
   }
 
   

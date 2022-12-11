@@ -14,7 +14,9 @@
  html{
   scroll-behavior: smooth;
  }
-
+ a{
+  color: #fff;
+ }
 
 .nav{
   height: 5rem;
@@ -150,6 +152,7 @@
   }
 
   .links i{
+    cursor: pointer;
     float: right;
     padding: .5rem;
   }

@@ -145,6 +145,27 @@ font-size: 17px;
 
 
 
+/* QUERRIES */
+
+
+table {
+  margin-left: 10rem;
+  margin-right: 3rem;
+  margin-top: 2rem;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 80%;
+  border: 1px solid #ddd;
+  align-self: center;
+}
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even){background-color: #07d407}
+
+
+
 @media screen and (max-width: 700px) {
   .sidebar {
     width: 100%;
@@ -169,6 +190,11 @@ font-size: 17px;
 }
 
 @media screen and (max-width: 400px) {
+  table {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
   .sidebar a {
     text-align: center;
     float: none;
