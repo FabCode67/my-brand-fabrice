@@ -126,16 +126,7 @@
   .linec{
     margin-top: 30rem;
   }
-  @media (max-width: 952px){
-
-    label.logo{
-      font-size: 30px;
-      padding-left: 50px;
-    }
-    .rightnav ul li a{
-      font-size: 16px;
-    }
-  }
+ 
 
 
   .download{
@@ -192,9 +183,6 @@
   .aboutright1 p{
     padding-top: 0rem;
   }
-  /* .lineh{
-    margin-top: 2rem;
-  } */
   .lefth{
     padding-top: 2rem;
   }
@@ -431,15 +419,12 @@
   width: 100%;
   height: 15rem;
 }
-  .footer{
-    width: 100%;
-    height: 6rem;
-  }
+
 
   .linec{
     background-color: #01CC32;
-    width: 97%;
     margin-left: 4rem;
+    flex-basis: 100%;
     margin-right: -3rem;
     height: .1rem;
   }
@@ -448,13 +433,11 @@
     justify-content: space-between;
     margin-left: 3rem;
     display: flex;
-    height: 3rem;
     padding-right: 7rem;
     padding-top: .2rem;
-    width: 100%;
-
+    flex-basis: 90%;
   }
- .mainf ul li{
+ .mainf p{
     color: #fff;
     display: inline;
     padding-left: 2rem;
@@ -464,9 +447,8 @@
   }
 
 
-  .iconsf ul li{
+  .iconsf p{
     color: #fff;
-
     display: inline;
     padding-left: 1rem;
 
@@ -484,10 +466,10 @@
 
   .allcontact{
     height: 35rem;
-    width: 100%;
     background-color: #03010E;
     padding: 3rem;
     display: flex;
+    flex-basis: 98;
     flex-direction: column;
 
   }
@@ -515,13 +497,41 @@
     height: 100%;
   }
 
-  .footer{
-    background-color: cornflowerblue;
-    height: 17%;
-    width: 100%;
+ 
+  .linec{
+    margin-top: 1rem;
+  }
+
+  @media (max-width: 952px){
+
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    .rightnav ul li a{
+      font-size: 16px;
+    }
   }
 
   @media (max-width: 858px){
+
+
+
+    .footer{
+      padding-top: 0rem;
+      padding: 0rem;
+      margin: 0rem;
+      margin-top: -3rem;
+      
+      
+    }
+ 
+    
+   .linec{
+    margin: 0;
+    width: 100%;
+    background-color:#01CC32
+   }
 
     .refer{
       padding: 1rem;
@@ -557,15 +567,13 @@
       
     }
     
-    .footer{
-      margin-top: 8rem;
-      color: white;
-      display: none;
-    }
-
+ 
+  .allcontact{
+    padding: 1rem;
+  }
     .contact{
       align-self: center;
-      width: 100%;
+      flex-basis: 98%;
       padding: 1rem;
       height: 78%;
       display: flex;
@@ -578,19 +586,16 @@
       height: 100%;
     }
     .rightcontact{
+      margin-top: -8rem;
       padding: 1rem;
       flex-basis: 100%;
     }
      
     input[type="text"] {
       padding-top: 1rem;
-      border-bottom: 1px solid #01CC32 ;
-      outline: 0;
+      width: 100%;
     }
-  .linec{
-    margin-top: 5rem;
-  }
- 
+
     #ports{
       height: fit-content;
 
@@ -674,4 +679,36 @@ img{
 .hd{
   color: #01CC32;
 } 
+
+
+.allmainf{
+
+  display: flex;
+  flex-direction: column;
+  height: 5rem;
+  margin: 0;
+  flex-basis: 100%;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.allmainf>div{
+  margin: 0;
+ 
+  flex-basis: 49%;
+
+}
+.mainf p{
+  padding-top: 1rem;
+  color: #fff;
+  display: inline;
+  text-align: center;
+  padding-left: 1rem;
+}
+.iconsf p{
+  padding-left: 2.5rem;
+  text-align: center;
+
+}
   }
+
