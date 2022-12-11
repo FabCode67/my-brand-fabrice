@@ -361,16 +361,19 @@
 
   
   input[type="button"] {
-    border: 0;
+    border: .5px solid #01CC32;
     background-color: #03010E;
-    border-bottom: 1px solid #01CC32;
-    outline: 0;
+    border-bottom: 2px solid #01CC32;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor: pointer;
     width: 30%;
     float: left;
-    
-    padding-top: 1rem;
+    margin-top: 1rem;
     color:#fff;
-
+  }
+  input[type="button"]:hover{
+    box-shadow: 0px 0px 20px white;
   }
    .blogs{
     padding-top: 4rem;
@@ -593,7 +596,13 @@
      
     input[type="text"] {
       padding-top: 1rem;
-      width: 100%;
+      width: 15rem;
+    }
+    input[type="button"] {
+      width: 7rem;
+    }
+    textarea{
+      width: 15rem;
     }
 
     #ports{
@@ -622,7 +631,7 @@
     ul{
       position: fixed;
       width: 40%;
-      height: 40vh;
+      height: 50vh;
       background:#03010E;
       top: 80px;
       right: -90%;
@@ -634,11 +643,11 @@
     }
     .rightnav ul li{
       display: block;
-      margin: 20px 0;
-      line-height: 20px;
+      padding: 1rem;
+      line-height: 30px;
     }
     .rightnav2 ul li a{
-      font-size: 15px;
+      font-size: 5px;
     }
 
     #check:checked ~ ul{
