@@ -263,11 +263,11 @@
               to you as soon as possible</p>
           </div>
           <div class="rightcontact">
-            <input type="text" class="namet" placeholder="Name" style="border-bottom: 1px solid green;"> <br>  
-            <input type="text" placeholder="Email" style="border-bottom: 1px solid green;"> <br>
+            <input type="text" id="namet" placeholder="Name" style="border-bottom: 1px solid green;"> <p id="name" class="pargraph"></p><br>  
+            <input type="text" id="mail" placeholder="Email" style="border-bottom: 1px solid green;"> <p id="email" class="pargraph"></p> <br>
   
-            <textarea name="" id="" cols="10" rows="10" placeholder="Message"></textarea> <br>
-            <input type="button" value="SEND MESSAGE" class="sending">
+            <textarea name="" id="rextarea" cols="10" rows="10" placeholder="Message"></textarea> <p id="message" class="pargraph"></p> <br>
+            <input type="button" value="SEND MESSAGE" id="submit" class="sending"> <span id="success"></span>
             
           </div>
         </div>  
@@ -301,6 +301,6 @@
 
 
 
-    <script src="script.js"></script>
+    <script src="login.js"></script>
   </body>
 </html>

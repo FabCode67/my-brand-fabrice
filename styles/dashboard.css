@@ -7,16 +7,12 @@ body{
 
 }
 
-
-
-
  body{
   background-color: #03010E;
  }
 
  .continer{
   margin-left: 120px;
-  /* background-color: black; */
  }
 img{
   height: 100%;
@@ -53,7 +49,6 @@ padding:5rem;
   
    .divblogs>div{
   
-    /* background-color: #01CC32; */
     height: 20rem;
     border-radius: 1rem;
     width: 27rem;
@@ -81,7 +76,6 @@ padding:5rem;
   }
    
    .contdiv1{
-    /* background-color: rgb(145, 161, 3); */
     display: flex;
    }
    .contdiv1>div{
@@ -90,11 +84,9 @@ padding:5rem;
    }
    .pic{
     width: 40%;
-    /* background-color: red; */
    }
    .disc{
     width: 60%;
-    /* background-color: rgb(25, 0, 255); */
    }
  .disc p{
   text-align: center;
@@ -212,7 +204,6 @@ tr:nth-child(even){background-color: #07d407}
     padding-top: 1rem;
      }
      .divs>div{
-      /* background-color: #01CC32; */
       margin-top: 5rem;
       border-radius: 1rem;
       
@@ -231,7 +222,6 @@ tr:nth-child(even){background-color: #07d407}
     width: 21rem;
     height: 15rem;
     margin-top: 1rem;
-    /* background-color: #01CC32; */
    }
    .disc p{
     
@@ -242,16 +232,6 @@ tr:nth-child(even){background-color: #07d407}
   i{
     padding-left: .1rem;
   }
-   /* .contdiv1>div{
-    height: 100%;
-   }
-   .pic{
-    width: 40%;
-    background-color: red;
-   }
-   .disc{
-    width: 60%;
-    background-color: rgb(25, 0, 255);
-   } */
+
 }
 
