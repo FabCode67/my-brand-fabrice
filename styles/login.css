@@ -16,16 +16,27 @@ body{
     color: red;
     padding-top: 0rem;
     margin-top: 0rem;
-    font-size: 20px;
+    font-size: 17px;
   }
   #secret{
     color: red;
     padding-top: 0rem;
     margin-top: 0rem;
-    font-size: 20px;
+    font-size: 17px;
 
   }
-  
+  #email{
+    color: red;
+    padding-top: 0rem;
+    margin-top: 0rem;
+    font-size: 17px;
+  }
+  #comfirm{
+    color: red;
+    padding-top: 0rem;
+    margin-top: 0rem;
+    font-size: 17px;
+  }
   .leftnav{
     height: 5rem;
     top: 0;
@@ -164,7 +175,7 @@ body{
     border-bottom: 1px solid #01CC32;
     outline: 0;
     width: 10rem;
-    padding-top: 1rem;
+    padding-top: .2rem;
     color: #fff;
   }
 
@@ -232,7 +243,7 @@ body{
     max-height: fit-content;
     max-width: 17rem;
     margin: auto;
-    margin-top: 12%;
+    margin-top: 3%;
     font-size: 20px;
  
   }

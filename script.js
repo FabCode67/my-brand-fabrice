@@ -98,7 +98,7 @@ function checkEmpty(){
 
     setTimeout(()=>{
         document.getElementById("success").innerHTML = ""
-    },5000)
+    },2000)
     names.value="";
     email.value="";
     message.value="";
@@ -132,7 +132,19 @@ function validateEmail(){
     
 }
 
-
+function passwordvalidation(){
+    if(password.value == ""){
+     document.getElementById("secret").innerHTML="password can't be empty"
+    }
+ //    else if(password.value.length < 8){
+ //     document.getElementById("secret").innerHTML="Enter 8 characters"
+ //    }
+    else{
+     document.getElementById("secret").innerHTML=""
+ 
+    }
+ }  
+ 
 function validateMessage(){
     if(message.value=="")
     document.getElementById("message").innerHTML = "message cant't be empty"
