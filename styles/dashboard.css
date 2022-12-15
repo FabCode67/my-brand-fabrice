@@ -167,7 +167,7 @@ tr:nth-child(even){background-color: #07d407}
   display: flex;
   /* flex-wrap: wrap; */
   flex-wrap: wrap;
-  background-color: #088f7d;
+  /* background-color: #088f7d; */
   padding-left: 1rem;
   flex-basis: 100%;
   padding-right: 0rem;
@@ -178,7 +178,7 @@ margin-left: 2rem;
 height: 25rem;
 flex-basis: 22%;
 margin-top: 2rem;
-background-color: #08478f;
+/* background-color: #08478f; */
 box-shadow: 0px 10px 30px black;
 }
 .subdiv{
@@ -190,7 +190,7 @@ box-shadow: 0px 10px 30px black;
 .photo{
 
   flex-basis: 60%;
-  background-color: brown;
+  /* background-color: brown; */
   justify-content: space-between;
 }
 .discript{
@@ -198,13 +198,13 @@ box-shadow: 0px 10px 30px black;
   padding-right: .5rem;
   line-height: 1.5rem;
   flex-basis: 40%;
-  background-color: rgb(42, 161, 165);
+  /* background-color: rgb(42, 161, 165); */
 }
 .buttons{
   flex-basis: 12%;
   display: flex;
   justify-content: space-between;
-  background-color: rgb(10, 36, 155); 
+  /* background-color: rgb(10, 36, 155);  */
 }
 button{
   text-align: center;
@@ -224,7 +224,7 @@ button{
   box-shadow: 0px 0x 20px white
 }
 .edit{
-  color: black;
+  /* color: black; */
 }
 .delete{
   color: red;
