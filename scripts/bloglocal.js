@@ -1,4 +1,3 @@
-console.table('hello');
 
 details = [];
 getData();
@@ -20,7 +19,7 @@ function save() {
     let blogContent = document.getElementById("textarea1");
     let imageId = document.getElementById("image").files[0];
     // let image = URL.createObjectURL(imageId)
-    // console.log(image)
+    console.log(imageId);
    
 
     let data = {
@@ -33,6 +32,6 @@ function save() {
 
 
 };
-document.getElementById("addblogform").addEventListener('submit', ()=>{
+document.getElementById("addblogform").addEventListener('submit', (e)=>{
     save()
 })

@@ -54,7 +54,8 @@ p{
     display: flex;
     flex-direction: column;
     padding-top: 1rem;
-    justify-content: space-between;
+    margin-top: 1rem;
+    /* justify-content: space-between; */
 }
 .left>div{
     /* background-color: aqua; */
@@ -73,7 +74,7 @@ p{
 
 .pic{
     width: 30%;
-    /* background-color: aqua; */
+    background-color: aqua;
 }
 .desc{
     width: 62%;
@@ -93,7 +94,34 @@ p{
         padding-right: 0rem;    
        justify-content: space-between;
     }
-
+    .allcont{
+        /* background-color: blue; */
+        margin-top: 5rem;
+        height: 100%;
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-left: .5rem;
+        padding-right: .5rem;    
+       justify-content: space-between;
+    }
+    .left{
+        /* background-color: yellow; */
+       display: flex;
+       flex-direction: column;
+       padding-top: 1rem;
+       margin-top: 6rem;
+       justify-content: space-between;
+   }
+   .allcont>div{
+    height: 100%;
+    flex-basis: 100%;
+    /* background-color: green; */
+   }
+   .pic{
+    flex-basis: 30%;
+    background-color: aqua;
+}
 }
 
 
