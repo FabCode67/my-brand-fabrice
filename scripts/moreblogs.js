@@ -26,19 +26,37 @@ function cards(){
 document.getElementById("blo").innerHTML=blogC
 
 let mores=""
-function morefun(index){
+ function morefun(index){
     mores =  `<div class="up"><img src="${blogs[index].image}" alt=""></div>
     <div class="down">
 
         <h3>${blogs[index].blogTitle}</h3>
         <p style="margin-top: 1rem;padding: .5rem;">
         ${blogs[index].blogContent}
-
-            <i class="fa-regular fa-heart" style="float: right; cursor: pointer;"></i>
         </p>
-
-        <textarea name="" id="" cols="30" rows="10" style="margin-top: 0rem;" placeholder="Add comment"></textarea>
+        // <form action="" id="commentForm">
+        <textarea name="" id="commetField" cols="30" rows="10" style="margin-top: 3rem; border: 1px solid green;" placeholder="Add comment" ></textarea> <br>
+        <button id="but">Add Comment</button>
+        
+        <div class="comment">
+            <i class="fa-solid fa-user" style="font-size: 30px;"></i>
+            <p id="thiscom">all about coomment</p>
+        </div>
     </div>`
-    document.getElementById("alb").innerHTML=mores
 
+    document.getElementById("alb").innerHTML=mores
 }
+
+
+
+
+// document.getElementById("but").addEventListener("click",()=>{
+//     var commentField = document.getElementById("commentField").value();
+//     var data={
+//         comments : commentField
+//     }
+//     blogs.push(data);
+//     localStorage.setItem("blogs",JSON.stringify(blogs))
+// })
+
+
