@@ -70,6 +70,7 @@ function morefun(index){
         };
         comments.push(commen);
         setComment()
+        morefun(index)
     };
     document.getElementById("commentForm").addEventListener('submit',saveComment)
 }
