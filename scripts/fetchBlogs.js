@@ -40,34 +40,8 @@ function deleteBlog(index) {
   window.location.href = "dashboard.html"
 };
 
-// document.getElementById("some").innerHTML=`${blogs[1].blogContent}`
 
 
-
-
-
-// let blogT = document.getElementById("title");
-// let blogC = document.getElementById("text");
-// let blogF = document.getElementById("file");
-// function editBlog(index){
-//  window.location.href="editblog.html"
-//  blogC.textContent = blogs[index].blogContent;
-//  blogT.value= blogs[index].blogTitle;
-//  blogF = blogs[index].image
-
-// }
-
-// function updateBlog(index){
-//   details[index] = {
-//     blogT: blogT.value,
-//     blogC: blogC.value,
-//     image : URL.createObjectURL(image)
-
-//   };
-//   localStorage.setItem("blogs", JSON.stringify(blogs))
-//   window.location.href="addblog.html"
-
-// }
 
 
 

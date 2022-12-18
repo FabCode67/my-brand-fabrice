@@ -1,15 +1,11 @@
 
 
-
+//<FETCHBLOG>
 let blogC=""
 let blogs = [];
 let Data = localStorage.getItem("blogs");
- blogs = JSON.parse(Data);
-
-
-
-
- cards()
+blogs = JSON.parse(Data);
+cards()
 function cards(){
   for (let i = 0; i < blogs.length; i++){
     blogC+= 
@@ -22,11 +18,14 @@ function cards(){
         </div>
    ` 
  };
+ 
 }
 document.getElementById("blo").innerHTML=blogC
 
+
+//more blog
 let mores=""
- function morefun(index){
+function morefun(index){
     mores =  `<div class="up"><img src="${blogs[index].image}" alt=""></div>
     <div class="down">
 
@@ -34,29 +33,67 @@ let mores=""
         <p style="margin-top: 1rem;padding: .5rem;">
         ${blogs[index].blogContent}
         </p>
-        // <form action="" id="commentForm">
-        <textarea name="" id="commetField" cols="30" rows="10" style="margin-top: 3rem; border: 1px solid green;" placeholder="Add comment" ></textarea> <br>
-        <button id="but">Add Comment</button>
-        
-        <div class="comment">
-            <i class="fa-solid fa-user" style="font-size: 30px;"></i>
-            <p id="thiscom">all about coomment</p>
-        </div>
-    </div>`
+        <form id="commentForm">
+       
+           <textarea name="" id="commentField" cols="30" rows="10" style="margin-top: 3rem; border: 1px solid green;" placeholder="Add comment" ></textarea> <br>
+           <button type="submit" id="but">Add Comment</button>
+           <input type="hidden" value="${blogs[index].blogTitle}" id="blog-title"/>
+           <div class="comment" id="commentsCard">
+           </div>
+           </form>
+           `
+           document.getElementById("alb").innerHTML=mores
+       let Comment = localStorage.getItem("comment");
+    if (Comment) {
+        comments = JSON.parse(Comment);
+    
+       var commentsCard =""
+              for (let i = 0; i < comments.length; i++){
+        if(comments[i].blog==blogs[index].blogTitle)
+        commentsCard += 
+       `
+       <i class="fa-solid fa-user" style="font-size: 30px;"></i>
+       <p id="thiscom">${comments[i].comm}</p>
+       
+       ` 
+       document.getElementById("commentsCard").innerHTML=commentsCard
+    };
+    
+    }
+    function saveComment() {
 
-    document.getElementById("alb").innerHTML=mores
+        var commentField = document.getElementById("commentField");
+        var blogTitle=document.getElementById("blog-title")
+        let commen = {
+           comm:commentField.value,
+           blog: blogTitle.value
+        };
+        comments.push(commen);
+        setComment()
+    };
+    document.getElementById("commentForm").addEventListener('submit',saveComment)
 }
 
+//</FETCHBLOGS>
 
 
 
-// document.getElementById("but").addEventListener("click",()=>{
-//     var commentField = document.getElementById("commentField").value();
-//     var data={
-//         comments : commentField
-//     }
-//     blogs.push(data);
-//     localStorage.setItem("blogs",JSON.stringify(blogs))
-// })
+//<FETCH COMMENT>
 
 
+var  comments = [];
+
+    
+
+//  commntsCard()
+// function commntsCard(){
+//   for (let i = 0; i < comments.length; i++){
+//     commentsCard += 
+//    `
+//    <i class="fa-solid fa-user" style="font-size: 30px;"></i>
+//    <p id="thiscom">${comments[i].comm}</p>
+//    ` 
+//  };
+// }
+
+//<FETCH COMMENT>
