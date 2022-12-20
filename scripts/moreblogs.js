@@ -52,7 +52,7 @@ function morefun(index){
         if(comments[i].blog==blogs[index].blogTitle)
         commentsCard += 
        `
-       <i class="fa-solid fa-user" style="font-size: 30px;"></i>
+       <i class="fa-solid fa-user" style="font-size: 20px;"></i>
        <p id="thiscom">${comments[i].comm}</p>
        
        ` 

@@ -62,6 +62,7 @@ p{
     flex-direction: column;
     padding-top: 1rem;
     justify-content: space-between;
+    height: auto;
 }
 
 .right>div{
@@ -134,7 +135,7 @@ p{
        display: flex;
        flex-direction: column;
        padding-top: 1rem;
-       margin-top: 6rem;
+       margin-top: auto;
        justify-content: space-between;
    }
    .allcont>div{
@@ -145,6 +146,13 @@ p{
    .pic{
     flex-basis: 30%;
     background-color: aqua;
+}
+
+#commentForm{
+    padding-bottom: 2rem;
+}
+.right{
+    max-height: fit-content;
 }
 }
 
