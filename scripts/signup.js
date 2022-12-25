@@ -42,7 +42,7 @@ function validatename(){
            }
 function validateEmail(){
       if(email.value=="")
-      document.getElementById("email").innerHTML = "email cant't be empty"
+      document.getElementById("email").innerHTML = "email can't be empty"
       else if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail.value))){
       document.getElementById("email").innerHTML = "Please ender valid email"
       switchs = false;

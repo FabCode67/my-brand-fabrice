@@ -119,7 +119,7 @@ i{
   display: block;
   color: white;
   font-family: 'Kanit', sans-serif;
-font-size: 17px;
+font-size: 16px;
   padding: 16px;
   text-decoration: none;
 }
@@ -135,7 +135,6 @@ font-size: 17px;
 
 
 .sidebar a:hover:not(.active) {
-  font-size: 20px;
   transition: .5s;
   color: white;
 }

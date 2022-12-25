@@ -18,7 +18,7 @@ function cards(){
    <div class="photo1"><img src="${blogs[i].image}" alt=""></div>
    <div class="sdisc">
      <h3>${blogs[i].blogTitle}</h3>
-     <p>${blogs[i].blogContent} 
+     <p>${blogs[i].blogContent.substring(0, 90) + '...'} 
      </p>
         <a href="./pages/moreblogs.html"><input type="button" value="more" > </a>           
        </div>

@@ -108,7 +108,7 @@ function checkEmpty(){
 
 function validatename(){
     if(names.value==""){
-        document.getElementById("name").innerHTML = "name cant't be empty"
+        document.getElementById("name").innerHTML = "name can't be empty"
     }
     else{
     document.getElementById("name").innerHTML = ""        
@@ -118,7 +118,7 @@ function validatename(){
          
 function validateEmail(){
     if(email.value=="")
-    document.getElementById("email").innerHTML = "email cant't be empty"
+    document.getElementById("email").innerHTML = "email can't be empty"
     else if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value))){
     document.getElementById("email").innerHTML = "Please ender valid email"
     switchs = false;
@@ -147,7 +147,7 @@ function passwordvalidation(){
  
 function validateMessage(){
     if(message.value=="")
-    document.getElementById("message").innerHTML = "message cant't be empty"
+    document.getElementById("message").innerHTML = "message can't be empty"
     else
     document.getElementById("message").innerHTML = ""   
     }
