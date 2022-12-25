@@ -7,7 +7,7 @@ let Data = localStorage.getItem("blogs");
 blogs = JSON.parse(Data);
 cards()
 function cards(){
-  for (let i = 0; i < blogs.length; i++){
+  for (let i = blogs.length-1; i >= 0; i--){
     blogC+= 
    `
 
@@ -58,7 +58,7 @@ function morefun(index){
     <div class="mainMomment">
         <form action="" id="commentForm">
             <div class="inputText">
-                <input type="text" placeholder="Username" required>
+                <input type="text" id="userName" placeholder="Username" required>
             </div>
             <div class="commentSect">
                 <textarea name="" id="commentField" cols="30" rows="10" placeholder="comment" required></textarea>
@@ -90,7 +90,7 @@ function morefun(index){
 
        <div class="minDisp">
        <div class="userDiv">
-           <p> <i class="fa-solid fa-user" style="font-size: 20px;"></i> Username</p>
+           <p> <i class="fa-solid fa-user" style="font-size: 20px;"></i> ${comments[i].username}</p>
        </div>
        <div class="dispContent">
        <p id="thiscom">${comments[i].comm}</p>
@@ -102,10 +102,11 @@ function morefun(index){
     
     }
     function saveComment() {
-
+        var userName = document.getElementById("userName")
         var commentField = document.getElementById("commentField");
         var blogTitle=document.getElementById("blog-title")
         let commen = {
+          username:userName.value,
            comm:commentField.value,
            blog: blogTitle.value
         };

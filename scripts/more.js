@@ -11,7 +11,7 @@ let Data = localStorage.getItem("blogs");
 
  cards()
 function cards(){
-  for (let i = 0; i < blogs.length; i++){
+  for (let i = blogs.length-1 ; i >= 0; i--){
     blogCards += 
    `
    <div class="blog1">
@@ -24,6 +24,9 @@ function cards(){
        </div>
  </div>
    ` 
+   if(i==2){
+    return
+   }
  };
 }
 document.getElementById("bloga").innerHTML=blogCards
