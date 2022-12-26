@@ -25,11 +25,9 @@ blogimage.addEventListener("change",(e)=>{
     const reader=new FileReader();
 
     reader.readAsDataURL(img);
-    // console.log(reader.readAsDataURL(img))
   
     reader.addEventListener("load",()=>{
         image=reader.result;
-        console.log(image);
 
     });
 });
@@ -38,11 +36,6 @@ blogimage.addEventListener("change",(e)=>{
 function save() {
     let blogTitle = document.getElementById("blog_title");
     let blogContent = document.getElementById("textarea1");
-    
-    // let image = URL.createObjectURL(imageId)
-    // console.log(imageId);
-   
-
     let data = {
         blogTitle: blogTitle.value,
         blogContent: blogContent.value,

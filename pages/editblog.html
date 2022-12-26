@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>editblog</title>
+    <title>addblog</title>
     <link rel="stylesheet" href="./../styles/login.css">
     <link rel="stylesheet" href="./../styles/dashboard.css">
 
@@ -24,65 +24,72 @@
 </div>
 
 
-      <div class="login">
-        <!-- <div class="place"> -->
-            <p id="some">jgf</p>
-<!-- 
-            <div class="hed"><h3>EDIT LOG</h3></div>
-            <p id="seen">dfxgchjbkn</p>
-            
-            <div class="change"> <input type="text" id="title" placeholder="Blogtitle"></div> -->
-            <!-- <section>
-              <div class="row">
-                  <div class="col">
-                      <div class="first box">
-                          <input id="font-size" type="number" value="16" min="1" max="100" onchange="f1(this)">
-                      </div>
-                      <div class="second box">
-                          <button type="button" onclick="f2(this)">
-                              <i class="fa-solid fa-bold"></i>
-                          </button>
-                          <button type="button" onclick="f3(this)">
-                              <i class="fa-solid fa-italic"></i>
-                          </button>
-                          <button type="button" onclick="f4(this)">
-                              <i class="fa-solid fa-underline"></i>
-                          </button>
-                      </div>
-                      <div class="third box">
-                          <button type="button" onclick="f5(this)">
-                              <i class="fa-solid fa-align-left"></i>
-                          </button>
-                          <button type="button" onclick="f6(this)">
-                              <i class="fa-solid fa-align-center"></i>
-                          </button>
-                          <button type="button" onclick="f7(this)">
-                              <i class="fa-solid fa-align-right"></i>
-                          </button>
-                      </div>
-                      <div class="fourth box">
-                          <button type="button" onclick="f8(this)">aA</button>
-                          <button type="button" onclick="f9()">
-                              <i class="fa-solid fa-text-slash"></i>
-                          </button>
-                          <input type="color" onchange="f10(this)">
-                      </div>
-                  </div>
-              </div>
-              <br>
-                        
-                      </textarea>
-              
-          </section> -->
-          <!-- <textarea id="text" placeholder="Your text here">
+  
+    <div class="login">
+        <div class="place">
 
-                      <div class="change"><input type="file" id="file" placeholder="UPLOAD PHOTO"></div>
-            <div class="change"><input type="button" value="UPDATE"></div>
+            <div class="hed"><h3>EDIT BLOG</h3></div>
+            
+            <div class="change"> <input type="text" id="blog_title" placeholder="Blog title"></div>
+            
+<section>
+  <div class="row">
+      <div class="col">
+          <div class="first box">
+              <input id="font-size" type="number" value="16" min="1" max="100" onchange="f1(this)">
+          </div>
+          <div class="second box">
+              <button type="button" onclick="f2(this)">
+                  <i class="fa-solid fa-bold"></i>
+              </button>
+              <button type="button" onclick="f3(this)">
+                  <i class="fa-solid fa-italic"></i>
+              </button>
+              <button type="button" onclick="f4(this)">
+                  <i class="fa-solid fa-underline"></i>
+              </button>
+          </div>
+          <div class="third box">
+              <button type="button" onclick="f5(this)">
+                  <i class="fa-solid fa-align-left"></i>
+              </button>
+              <button type="button" onclick="f6(this)">
+                  <i class="fa-solid fa-align-center"></i>
+              </button>
+              <button type="button" onclick="f7(this)">
+                  <i class="fa-solid fa-align-right"></i>
+              </button>
+          </div>
+          <div class="fourth box">
+              <button type="button" onclick="f8(this)">aA</button>
+              <button type="button" onclick="f9()">
+                  <i class="fa-solid fa-text-slash"></i>
+              </button>
+              <input type="color" onchange="f10(this)">
+          </div>
+      </div>
+  </div>
+  <br>
+          <textarea id="textarea1" placeholder="Your text here "></textarea>
+  
+</section>
+
+            <div class="change"><input type="file" id="image" placeholder="UPLOAD PHOTO"></div>
+            <div class="change"> <input type="submit" id="go" value="UpDate"></div>
            
-        </div> -->
+           
+        </div>
       
       </div>
-      <script src="./../scripts/fetchBlogs.js"></script>
-      <script src="./../scripts/script.js"></script>
+
+  
+  </form>
+
+ <script src="./../scripts/fetchBlogs.js"></script>
+  <script src="./../scripts/bloglocal.js"></script>
+
+  <script src="./../scripts/script.js"></script>
+
+
 </body>
 </html>
