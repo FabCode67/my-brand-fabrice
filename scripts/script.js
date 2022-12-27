@@ -87,21 +87,22 @@ var login = document.getElementById("logins")
 var button = document.getElementById("submit");
 var names = document.getElementById("namet");
 var email = document.getElementById("mail");
-var message = document.getElementById("rextarea");
+var messaget = document.getElementById("rextarea");
 var password = document.getElementById("pass")
 
 var switchs = true
 
 function checkEmpty(){
-    if(names.value!="" && email.value!="" && message.value!=""&&switchs==true){
+    if(names.value!="" && email.value!="" && messaget.value!=""&&switchs==true){
     document.getElementById("success").innerHTML = " message submitted successful👌"
 
     setTimeout(()=>{
         document.getElementById("success").innerHTML = ""
     },2000)
+    saveMessage()
     names.value="";
     email.value="";
-    message.value="";
+    messaget.value="";
 }
    }
 
@@ -145,8 +146,53 @@ function passwordvalidation(){
     }
  }  
  
+
+
+
+
+
+
+
+
+
+ message = [];
+ getMessage();
+ 
+ function getMessage(){
+     let Message = localStorage.getItem("messages");
+     if (Message) {
+         message = JSON.parse(Message);
+     } else {
+         setMessage();
+     };
+ };
+ 
+ function setMessage(){
+     localStorage.setItem("messages", JSON.stringify(message))
+ }
+ 
+ 
+ function saveMessage(){
+     
+ let uname = document.getElementById("namet")
+ let umail = document.getElementById("mail")
+ let umessage = document.getElementById("rextarea")
+ 
+     let allMesssages = {
+         uname:uname.value,
+         umail:umail.value,
+         umessage:umessage.value
+     }
+     message.push(allMesssages)
+     setMessage()
+ }
+ 
+ document.getElementById("contactForm").addEventListener('submit', saveMessage)
+
+
+
 function validateMessage(){
-    if(message.value=="")
+    if(messaget.value=="")
     document.getElementById("message").innerHTML = "message can't be empty"
     else
     document.getElementById("message").innerHTML = ""   
