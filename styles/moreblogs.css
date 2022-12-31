@@ -25,6 +25,11 @@ body{
     height: auto;
     /* background-color: brown; */
 }
+#nofComents{
+    float: left;
+    padding-right: .5rem;
+}
+
 
 .upMain{
     display: flex;
@@ -222,7 +227,7 @@ form{
     cursor: pointer;
     margin-right: 0;
 }
-button{
+#avoid2{
     display: none;
 }
 
@@ -248,163 +253,3 @@ button{
 }
 
 
-
-/* .allcont{
-    background-color: aqua;
-    padding: 3rem
-}
-body{
-    background-color: #03010E;
-    font-family: 'Kanit', sans-serif;
-    
-}
-
-img{
-    height: 100%;
-    width: 100%;
-}
-
-.adcoment{
-    background-color:#01CC32;
-    float: right;
-    margin-right: 6rem;
-    padding: .5rem;
-    margin-top: .2rem;
-    border-radius: .5rem;
-    font-size: 18px;
-    font-weight: 700;
-    color: white;
-    cursor: pointer;
-}
-
-.allcont{
-    margin-top: 5rem;
-    height: 100%;
-    flex-basis: 80%;
-    display: flex;
-    padding-left: 6rem;
-    padding-right: 5rem;    
-   justify-content: space-between;
-}
-.comment{
-    border: 1px solid rgb(44, 46, 44);
-    height: auto;
-    padding: .5rem;
-    margin-top: 5rem;
-    box-shadow: 0px 0px 10px #b4a7f8;
-}
-
-p{
-    color: white;
-}
-
-.allcont>div{
- height: auto;
- 
- background-color: green;
-}
-.right .up{
-    flex-basis: 55;
-}
-.right{
-    background-color: yellow;
-    display: flex;
-    flex-basis: 50%;
-    flex-direction: column;
-    padding-top: 1rem;
-    justify-content: space-between;
-    height: auto;
-}
-
-.right>div{
-    background-color: aqua;
-    height: 48%;
-    width: 100%;
-}
-.left{
-     background-color: yellow;
-    display: flex;
-    flex-direction: column;
-    padding-top: 1rem;
-    flex-basis: 35%;
-    margin-left: 3rem;
-    margin-top: 1rem;
-    justify-content: space-between;
-}
-.left>div{
-    background-color: aqua;
-    height: 19%;
-    width: 100%;
-}
-.blogs{
-     background-color: yellow;
-    display: flex;
-    padding-top: 1rem;
-    justify-content: space-between;
-}
-.blogs>div{
-    height: 100%;
-}
-
-.pic{
-    width: 30%;
-    background-color: aqua;
-}
-.desc{
-    width: 62%;
-    background-color: chocolate;
-}
-
-
-
-
-@media (max-width: 858px){
-    .allcont{
-        background-color: blue;
-        margin-top: 1rem;
-        height: 100%;
-        flex-basis: 80%;
-        display: flex;
-        flex-direction: column;
-        padding-left: 0rem;
-        padding-right: 0rem;    
-       justify-content: space-between;
-    }
-    .allcont{
-        background-color: blue;
-        margin-top: 5rem;
-        height: 100%;
-        flex-basis: 100%;
-        display: flex;
-        flex-direction: column;
-        padding-left: .5rem;
-        padding-right: .5rem;    
-       justify-content: space-between;
-    }
-    .left{
-        background-color: yellow;
-       display: flex;
-       flex-direction: column;
-       padding-top: 1rem;
-       margin-top: auto;
-       justify-content: space-between;
-   }
-   .allcont>div{
-    height: 100%;
-    flex-basis: 100%;
-    background-color: green;
-   }
-   .pic{
-    flex-basis: 30%;
-    background-color: aqua;
-}
-
-#commentForm{
-    padding-bottom: 2rem;
-}
-.right{
-    max-height: fit-content;
-}
-}
-
- */

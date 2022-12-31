@@ -24,9 +24,14 @@ function cards(){
        </div>
  </div>
    ` 
-   if(i==2){
-    return
+   if(blogs.length<3){
+    document.getElementById("rmore").style.display = "none";
    }
+   else{
+      document.getElementById("rmore").style.display = "block";
+      // blogs.splice(1, 1)
+   }
+   
  };
 }
 document.getElementById("bloga").innerHTML=blogCards

@@ -25,7 +25,7 @@ function cards(){
        </div>
        <div class="undercont">
       <a id="avoid" href = "#here" <button onclick="morefun(${i})">more</button> </a>
-      <button onclick="morefun(${i})">more</button>
+      <button id="avoid2" onclick="morefun(${i})">more</button>
        </div>                   
 
        
@@ -64,8 +64,10 @@ function morefun(index){
                 <textarea name="" id="commentField" cols="30" rows="10" placeholder="comment" required></textarea>
             </div>
             <div class="buttonDiv">
+                 <label><span id="nofComents"> 0 </span>Comment(s)</label>
                 <button type="submit" id="but" >Add Comment</button>
             </div>
+            
             <input type="hidden" value="${blogs[index].blogTitle}" id="blog-title"/>
 
         </form>
@@ -78,13 +80,18 @@ function morefun(index){
     </section>
            `
            document.getElementById("alb").innerHTML=mores
+           var nofcom = 0
        let Comment = localStorage.getItem("comment");
     if (Comment) {
         comments = JSON.parse(Comment);
     
        var commentsCard =""
               for (let i = comments.length-1 ; i > 0; i--){
-        if(comments[i].blog==blogs[index].blogTitle)
+                
+        if(comments[i].blog==blogs[index].blogTitle){
+            nofcom ++
+       document.getElementById("nofComents").innerHTML =nofcom;
+
         commentsCard += 
        `
 
@@ -97,8 +104,12 @@ function morefun(index){
         </div>
    </div>       
        ` 
+        }
        document.getElementById("commentsCard").innerHTML=commentsCard
+
+       
     };
+
     
     }
     function saveComment() {
@@ -116,27 +127,6 @@ function morefun(index){
     };
     document.getElementById("commentForm").addEventListener('submit',saveComment)
 }
-
-//</FETCHBLOGS>
-
-
-
-//<FETCH COMMENT>
-
-
 var  comments = [];
 
-    
 
-//  commntsCard()
-// function commntsCard(){
-//   for (let i = 0; i < comments.length; i++){
-//     commentsCard += 
-//    `
-//    <i class="fa-solid fa-user" style="font-size: 30px;"></i>
-//    <p id="thiscom">${comments[i].comm}</p>
-//    ` 
-//  };
-// }
-
-//<FETCH COMMENT>
