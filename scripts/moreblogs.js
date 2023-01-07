@@ -1,4 +1,5 @@
 
+/*----------------------------------READMORE BLOGS SUB-CARD------------------------------------------------------*/
 
 //<FETCHBLOG>
 let blogC=""
@@ -37,8 +38,16 @@ function cards(){
 }
 document.getElementById("blo").innerHTML=blogC
 
+/*----------------------------------READMORE BLOGS SUB-CARD------------------------------------------------------*/
 
-//more blog
+
+
+
+
+
+
+
+/*----------------------------------READMORE BLOGS MAIN CARD------------------------------------------------------*/
 let mores=""
 function morefun(index){
     mores =  ` <section id="here">
@@ -127,6 +136,6 @@ function morefun(index){
     };
     document.getElementById("commentForm").addEventListener('submit',saveComment)
 }
-var  comments = [];
 
 
+/*----------------------------------READMORE BLOGS MAIN-CARD------------------------------------------------------*/

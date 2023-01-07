@@ -32,6 +32,10 @@ function cards(){
  };
 }
 document.getElementById("blogCard").innerHTML=blogCard
+
+
+
+
 function deleteBlog(index) {
   blogs.splice(index, 1);
   localStorage.setItem('blogs', JSON.stringify(blogs))
@@ -45,6 +49,13 @@ function deleteBlog(index) {
 
 
 function edit(index) {
+
+ var blogRef = firebase.database().ref("/myBlogTest/" + key);
+    blogRef.on("value", function(snapshot) {
+      blog = snapshot.val();
+   
+
+
   let editForm = 
   `<div class="login">
   <form action="" id="addblogform">
@@ -109,6 +120,8 @@ function edit(index) {
   `;
   document.getElementById("super").innerHTML = editForm;
   
+
+});
 };
 
 

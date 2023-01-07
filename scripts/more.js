@@ -29,7 +29,6 @@ function cards(){
    }
    else{
       document.getElementById("rmore").style.display = "block";
-      // blogs.splice(1, 1)
    }
    
  };
