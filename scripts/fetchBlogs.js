@@ -296,7 +296,7 @@ function editData(key) {
     var dataRef = database.ref("/myBlogTest/" + key);
   
     // Use the `remove()` method to delete the data
-    var comfirm =window.confirm()
+    var comfirm =window.confirm("are you sure that you want to delete this blog?")
     console.log(comfirm);
     if(comfirm==true){
       dataRef.remove().then(function() {
