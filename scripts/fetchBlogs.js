@@ -225,10 +225,7 @@ function edit(key) {
       <div class="change"> <button type="submit" class="btn btn-primary mt-3" onclick="editData('${key}')"  style="color: rgb(253, 255, 254); width: 100%; background-color: green;">Update</button>
       </div>
      
-     
   </div>
-
-
 
 </form> </div>
   `;
