@@ -34,8 +34,9 @@ body{
 .upMain{
     display: flex;
     flex-direction: column;
-    flex-basis: 70%;
+    flex-basis: 60%;
     height: auto;
+    margin-left: 5rem;
     /* background-color: cornflowerblue; */
 }
 
@@ -54,6 +55,7 @@ body{
     flex-direction: column;
     flex-basis: 30%;
     height: auto;
+    margin-left: 5rem;
     /* background-color: rgb(100, 237, 191); */
 }
 
@@ -231,8 +233,14 @@ form{
     display: none;
 }
 
-
-
+.belowMain{
+margin-left: 0rem;
+}
+.upMain{
+    
+    margin-left: 0rem;
+    /* background-color: cornflowerblue; */
+}
 #avoid{
     display: block;
     float: right;

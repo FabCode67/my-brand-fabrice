@@ -99,7 +99,7 @@ function checkEmpty(){
     setTimeout(()=>{
         document.getElementById("success").innerHTML = ""
     },2000)
-    saveMessage()
+    submitForm()
     names.value="";
     email.value="";
     messaget.value="";
@@ -155,39 +155,94 @@ function passwordvalidation(){
 
 
 
- message = [];
- getMessage();
+//  message = [];
+//  getMessage();
  
- function getMessage(){
-     let Message = localStorage.getItem("messages");
-     if (Message) {
-         message = JSON.parse(Message);
-     } else {
-         setMessage();
-     };
- };
+//  function getMessage(){
+//      let Message = localStorage.getItem("messages");
+//      if (Message) {
+//          message = JSON.parse(Message);
+//      } else {
+//          setMessage();
+//      };
+//  };
  
- function setMessage(){
-     localStorage.setItem("messages", JSON.stringify(message))
- }
+//  function setMessage(){
+//      localStorage.setItem("messages", JSON.stringify(message))
+//  }
  
  
- function saveMessage(){
+//  function saveMessage(){
      
- let uname = document.getElementById("namet")
- let umail = document.getElementById("mail")
- let umessage = document.getElementById("rextarea")
+//  let uname = document.getElementById("namet")
+//  let umail = document.getElementById("mail")
+//  let umessage = document.getElementById("rextarea")
  
-     let allMesssages = {
-         uname:uname.value,
-         umail:umail.value,
-         umessage:umessage.value
-     }
-     message.push(allMesssages)
-     setMessage()
- }
+//      let allMesssages = {
+//          uname:uname.value,
+//          umail:umail.value,
+//          umessage:umessage.value
+//      }
+//      message.push(allMesssages)
+//      setMessage()
+//  }
  
- document.getElementById("contactForm").addEventListener('submit', saveMessage)
+//  document.getElementById("contactForm").addEventListener('submit', saveMessage)
+
+
+
+
+
+
+                                      //FIREBASE MESSAGES//
+
+
+          
+
+  
+//   document.getElementById("contactForm").addEventListener('click',submitForm)
+  
+  function submitForm(){
+   
+   
+         let uname = document.getElementById("namet").value
+          let umail = document.getElementById("mail").value
+          let umessage = document.getElementById("rextarea").value
+      var contactRef = firebase.database().ref("/contactMessages");
+      contactRef.push({
+        userName: uname,
+        mail: umail,
+        message:umessage
+      });
+      }
+  
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

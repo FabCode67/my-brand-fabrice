@@ -28,9 +28,11 @@
     <div class="login">
         <div class="place">
 
-            <div class="hed"><h3>ADD BLOG</h3></div>
+            <div class="hed" id="hed"><h3>ADD BLOG</h3></div>
             
-            <div class="change"> <input type="text" id="blog_title" placeholder="Blog title"></div>
+            <div class="change"> <input type="text" id="blog_title" placeholder="Blog title">
+                <p id="error1" style="color: red;"></p>
+            </div>
             
 <section>
   <div class="row">
@@ -71,12 +73,14 @@
   </div>
   <br>
           <textarea id="textarea1" placeholder="Your text here "></textarea>
+          <p id="error2" style="color: red;"></p>
   
 </section>
 
             <div class="change"><input type="file" id="image" placeholder="UPLOAD PHOTO"></div>
-            <div class="change"> <input type="submit" id="go" value="POST"></div>
-           
+            <!--  <input type="submit" id="go" value="POST"> -->
+            <div class="change"></div><button id="insertt"  style="color: rgb(253, 255, 254); width: 100%; background-color: green;">INSERT</button></div>
+
            
         </div>
       
@@ -87,10 +91,12 @@
   </form>
 
 
-  <script src="./../scripts/bloglocal.js"></script>
 
-  <script src="./../scripts/script.js"></script>
+  
+<!--Firebase Libraries-->
 
-
-</body>
-</html>
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-database.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script src="./../scripts/bloglocal.js"></script>

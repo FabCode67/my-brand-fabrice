@@ -130,7 +130,7 @@
   .seemore{
     text-align: center;
      margin: auto; 
-     margin-left: 46rem; 
+     margin-left: 35rem; 
      padding-top: 1rem;
      padding-bottom: 1rem;
       margin-top: 1rem;
@@ -424,13 +424,14 @@
   display: flex;
   height: 100%;
   width: 100%;
+  padding-right: 2rem;
 
 }
 .allblog>div{
   margin-top: 5rem;
   flex-basis: 30%;
   margin-left: 6%;
-  padding-right: 3rem;
+  padding-right: 0rem;
   align-self: center;
   height: 70%;
   box-shadow: 0px 0px 40px black;
@@ -500,6 +501,10 @@
   .linec{
     margin-right: 5rem;
     width: 90%;
+  }
+
+  .sdisc h3{
+    padding-bottom: .5rem;
   }
 
   .contact{
