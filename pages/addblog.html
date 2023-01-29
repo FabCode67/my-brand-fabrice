@@ -13,7 +13,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./../styles/addblog.css">
+     <link rel="stylesheet" href="../styles/textEditor.css">
 
+     
+     </style>
 </head>
 <body><div class="sidebar">
   <a class="active" href="" id="uniq">Fabrice</a>
@@ -34,52 +37,21 @@
                 <p id="error1" style="color: red;"></p>
             </div>
             
-<section>
-  <div class="row">
-      <div class="col">
-          <div class="first box">
-              <input id="font-size" type="number" value="16" min="1" max="100" onchange="f1(this)">
-          </div>
-          <div class="second box">
-              <button type="button" onclick="f2(this)">
-                  <i class="fa-solid fa-bold"></i>
-              </button>
-              <button type="button" onclick="f3(this)">
-                  <i class="fa-solid fa-italic"></i>
-              </button>
-              <button type="button" onclick="f4(this)">
-                  <i class="fa-solid fa-underline"></i>
-              </button>
-          </div>
-          <div class="third box">
-              <button type="button" onclick="f5(this)">
-                  <i class="fa-solid fa-align-left"></i>
-              </button>
-              <button type="button" onclick="f6(this)">
-                  <i class="fa-solid fa-align-center"></i>
-              </button>
-              <button type="button" onclick="f7(this)">
-                  <i class="fa-solid fa-align-right"></i>
-              </button>
-          </div>
-          <div class="fourth box">
-              <button type="button" onclick="f8(this)">aA</button>
-              <button type="button" onclick="f9()">
-                  <i class="fa-solid fa-text-slash"></i>
-              </button>
-              <input type="color" onchange="f10(this)">
-          </div>
-      </div>
-  </div>
-  <br>
-          <textarea id="textarea1" placeholder="Your text here "></textarea>
-          <p id="error2" style="color: red;"></p>
-  
-</section>
+
+
+            <div class="content">
+               
+                      <input name="art_id" type="hidden"><div id="visual-editor">
+                      <div id="editor" class="pell"></div></div><div id="source-editor" style="background-color: aqua;">
+                      <textarea class="text1" id="html-output" name="html-output" onchange="TextArea()" onblur="TextArea()" rows="10" cols="50"></textarea>
+                      <p id="error2" style="color: red;"></p>
+
+                    </div>
+               
+                    </div>
 
             <div class="change"><input type="file" id="image" placeholder="UPLOAD PHOTO"></div>
-            <!--  <input type="submit" id="go" value="POST"> -->
-            <div class="change"></div><button id="insertt"  style="color: rgb(253, 255, 254); width: 100%; background-color: green;">INSERT</button></div>
+            <div class="change"></div><button id="insertt"  style="color: rgb(253, 255, 254); width: 88%; background-color: green;">INSERT</button></div>
 
            
         </div>
@@ -90,7 +62,7 @@
   
   </form>
 
-
+  
 
   
 <!--Firebase Libraries-->
@@ -99,4 +71,35 @@
 <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-database.js"></script> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+
 <script src="./../scripts/bloglocal.js"></script>
+
+<script src="../scripts/textEditor.js"></script>
+
+<script>
+    var editor = window.pell.init({
+      element: document.getElementById('editor'),
+      actions: ['bold', 'italic', 'underline', 'heading1', 'heading2', 'olist', 'ulist', 'link', 'image', 'justifyLeft', 'justifyRight', 'justifyCenter', 'justifyFull'],
+      defaultParagraphSeparator: 'p',
+      onChange: function (html) {
+        document.getElementById('html-output').value   = html
+      }
+    })
+   editor.content.innerHTML = document.getElementById('html-output').value
+   function TextArea(){
+   editor.content.innerHTML = document.getElementById('html-output').value
+   }function toggleEditor() {
+   if (document.getElementById("source-editor").style.display == "none") {
+      document.getElementById("source-editor").style.display = "block";
+      document.getElementById("visual-editor").style.display = "none";
+      document.getElementById("btn_lbl").value = "Visual Editor";
+   } else {
+      document.getElementById("source-editor").style.display = "none";
+      document.getElementById("visual-editor").style.display = "block";
+      document.getElementById("btn_lbl").value = "Source Editor";
+   }
+   }
+  </script>
+  </body>
+
+  </html>

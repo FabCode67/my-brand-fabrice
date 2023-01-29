@@ -164,15 +164,12 @@ const firebaseConfig = {
   var dataContainer =  document.getElementById("blogCard")
   var blogRef = firebase.database().ref("/myBlogTest");
   blogRef.on("value", function(snapshot) {
-    // Clear the data container
     dataContainer.innerHTML = "";
 
-    // Get the data
     var data = snapshot.val();
 
    
 
-    // Loop through the data and add it to the data container
     for (var key in data) {
       var blog = data[key];
       console.log(key);
@@ -206,7 +203,6 @@ const firebaseConfig = {
 function edit(key) {
   var blog;
 
-  // Get a reference to the data that you want to edit
   var blogRef = firebase.database().ref("/myBlogTest/" + key);
   blogRef.on("value", function(snapshot) {
     blog = snapshot.val();
@@ -216,7 +212,7 @@ function edit(key) {
   <form action="" id="addblogform">
   <div class="place">
 
-      <div class="hed"><h3>ADD BLOG</h3></div>
+      <div class="hed"><h3>EDIT BLOG</h3></div>
       
       <div class="change"> <input type="text" id="blogHead" value="${blog.title}"></div>
       
@@ -236,29 +232,12 @@ function edit(key) {
 
 
 
-// function editData(key) {
-//   // Get the values from the form
-//   var newTitle = document.getElementById("blogHead").value;
-//   var newBody = document.getElementById("blogBody").value;
-
-//   // Get a reference to the data that you want to update
-//   var blogRef = firebase.database().ref("/myBlogTest/" + key);
-
-//   // Update the data in the database
-//   blogRef.update({
-//     title: newTitle,
-//     body: newBody
-//   });
-// }
-
 function editData(key) {
-  // Get the values from the form
   var newTitle = document.getElementById("blogHead").value;
   var newBody = document.getElementById("blogBody").value;
   let blogimage = document.getElementById("image");
   var imageFile = blogimage.files[0];
 
-  // Get a reference to the data that you want to update
   var blogRef = firebase.database().ref("/myBlogTest/" + key);
 
   // Update the data in the database
@@ -267,12 +246,10 @@ function editData(key) {
     body: newBody
   });
 
-  // Add the image to Firebase Storage and get its URL
   if (imageFile) {
     var storageRef = firebase.storage().ref("/myBlogTest/" + key + "/image");
     storageRef.put(imageFile).then(function(snapshot) {
       snapshot.ref.getDownloadURL().then(function(downloadURL) {
-        // Update the image URL in the database
         blogRef.update({
           blogImage: downloadURL
         });
@@ -286,21 +263,16 @@ function editData(key) {
 
 
   function deleteData(key) {
-    // Get a reference to the database
     var database = firebase.database();
   
-    // Get a reference to the data that you want to delete
     var dataRef = database.ref("/myBlogTest/" + key);
   
-    // Use the `remove()` method to delete the data
     var comfirm =window.confirm("are you sure that you want to delete this blog?")
     console.log(comfirm);
     if(comfirm==true){
       dataRef.remove().then(function() {
-        // Data deleted successfully
         console.log("Data deleted successfully");
       }).catch(function(error) {
-        // An error occurred
         console.log("Error deleting data: " + error);
       });
     }

@@ -97,12 +97,12 @@ blogimage.addEventListener("change",(e)=>{
 
 function cleaForm(){
   document.getElementById("blog_title").value=""
-  document.getElementById("textarea1").value=""
+  document.getElementById("html-output").value=""
   document.getElementById("image").files[0]=null
 }
 
 var btitle = document.getElementById("blog_title")
-var textarea = document.getElementById("textarea1");
+var textarea = document.getElementById("html-output");
 
 function checkEmptyness(){
   if(btitle.value==""){
@@ -139,7 +139,7 @@ function submitForm(e){
     return
   }
     var blogTitle = document.getElementById("blog_title").value;
-    var blogContent = document.getElementById("textarea1").value;
+    var blogContent = document.getElementById("html-output").value;
     var blogRef = firebase.database().ref("/myBlogTest");
     blogRef.push({
       title: blogTitle,
