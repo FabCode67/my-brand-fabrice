@@ -1,0 +1,95 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addblog</title>
+    <link rel="stylesheet" href="./../styles/login.css">
+    <link rel="stylesheet" href="./../styles/dashboard.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.cdnfonts.com/css/kanit-2" rel="stylesheet">
+                
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./../styles/addblog.css">
+
+</head>
+<body><div class="sidebar">
+  <a class="active" href="" id="uniq">Fabrice</a>
+  <a href="dashboard.html">Dashboard</a>
+  <a href="./../index.html">Blogs</a>
+  <a href="addblog.html">Add blog</a>
+  <a href="login.html">Log Out</a>
+</div>
+
+
+  
+    <div class="login">
+        <div class="place">
+
+            <div class="hed"><h3>EDIT BLOG</h3></div>
+            
+            <div class="change"> <input type="text" id="blog_title" placeholder="Blog title"></div>
+            
+<section>
+  <div class="row">
+      <div class="col">
+          <div class="first box">
+              <input id="font-size" type="number" value="16" min="1" max="100" onchange="f1(this)">
+          </div>
+          <div class="second box">
+              <button type="button" onclick="f2(this)">
+                  <i class="fa-solid fa-bold"></i>
+              </button>
+              <button type="button" onclick="f3(this)">
+                  <i class="fa-solid fa-italic"></i>
+              </button>
+              <button type="button" onclick="f4(this)">
+                  <i class="fa-solid fa-underline"></i>
+              </button>
+          </div>
+          <div class="third box">
+              <button type="button" onclick="f5(this)">
+                  <i class="fa-solid fa-align-left"></i>
+              </button>
+              <button type="button" onclick="f6(this)">
+                  <i class="fa-solid fa-align-center"></i>
+              </button>
+              <button type="button" onclick="f7(this)">
+                  <i class="fa-solid fa-align-right"></i>
+              </button>
+          </div>
+          <div class="fourth box">
+              <button type="button" onclick="f8(this)">aA</button>
+              <button type="button" onclick="f9()">
+                  <i class="fa-solid fa-text-slash"></i>
+              </button>
+              <input type="color" onchange="f10(this)">
+          </div>
+      </div>
+  </div>
+  <br>
+          <textarea id="textarea1" placeholder="Your text here "></textarea>
+  
+</section>
+
+            <div class="change"><input type="file" id="image" placeholder="UPLOAD PHOTO"></div>
+            <div class="change"> <input type="submit" id="go" value="UpDate"></div>
+           
+           
+        </div>
+      
+      </div>
+
+  
+  </form>
+
+ <script src="./../scripts/fetchBlogs.js"></script>
+  <script src="./../scripts/bloglocal.js"></script>
+
+  <script src="./../scripts/script.js"></script>
+
+
+</body>
+</html>
