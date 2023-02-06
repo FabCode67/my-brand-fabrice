@@ -1,0 +1,272 @@
+
+body{
+    background-color:#03010E
+}
+.nav{
+    height: 5rem;
+    top: 0;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background-color: #03010E;
+  
+  }
+  
+  #nam{
+    color: red;
+    padding-top: 0rem;
+    margin-top: 0rem;
+    font-size: 17px;
+  }
+  #secret{
+    color: red;
+    padding-top: 0rem;
+    margin-top: 0rem;
+    font-size: 17px;
+
+  }
+  #email{
+    color: red;
+    padding-top: 0rem;
+    margin-top: 0rem;
+    font-size: 17px;
+  }
+  #comfirm{
+    color: red;
+    padding-top: 0rem;
+    margin-top: 0rem;
+    font-size: 17px;
+  }
+  .leftnav{
+    height: 5rem;
+    top: 0;
+    width: 90%;
+    background-color: #03010E;
+  
+  }
+  .rightnav{
+    border-bottom-left-radius: 2rem;
+    height: 3rem;
+    top: 0;
+    width: 8%;
+    padding-right: 1rem;
+  }
+
+
+  
+  .rightnav ul{
+    align-items: center;
+    text-align: center;
+
+  }
+  .rightnav ul li{
+    text-align: center;
+
+  }
+ ul li a{
+
+    color: white;
+    font-size: 12px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+  }
+
+  ul li{
+    list-style-type: none;
+  }
+  label.logo{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+
+
+  .login{
+    height: 34rem;
+    width: 35rem;
+    align-self: center;
+    margin-top: 1rem;
+    margin: auto;
+    padding: 2rem;
+    box-shadow: 0px 0px 40px black;
+    color: #fff;
+    
+
+  }
+
+  .change{
+    padding-top: 2rem;
+  }
+
+  .place{
+    padding-left: 5rem;
+    padding-top: 2rem;
+  }
+
+  
+  input[type="button"] {
+    border: 0;
+    background-color: #03010E;
+    border: 1px solid #01CC32;
+    cursor: pointer;
+    outline: 0;
+    margin-left: 21rem;
+    width: 15%;
+    color:#fff;
+    border-radius: 4px;
+    margin-left: 12rem;
+    width: 17%;
+
+  }
+
+  input[type="button"]:hover{
+    box-shadow: 0px 0px 20px white;
+    transition: 1s;
+  }
+
+  input[type="text"] {
+    border: 0;
+    background-color: #03010E;
+    border-bottom: 1px solid #01CC32;
+    outline: 0;
+    width: 85%;
+    padding-top: 1rem;
+    color: #fff;
+  }
+  
+  input[type="password"] {
+    border: 0;
+    background-color: #03010E;
+    border-bottom: 1px solid #01CC32;
+    outline: 0;
+    width: 85%;
+    padding-top: 1rem;
+    color: #fff;
+  }
+
+  h3{
+    border-bottom: 4px solid green;
+    width: 7.9rem;
+    text-align: center
+
+  }
+  .discript h3{
+    text-align: start;
+    width: 100%;
+    margin-top: 0rem;
+  }
+
+  .hed{
+    padding-left: 10rem;
+  }
+
+  .foot{
+    padding-top: 3rem;
+    padding-left: 8rem;
+  }
+
+
+
+  input[type="file"] {
+    border: 0;
+    background-color: #03010E;
+    border-bottom: 1px solid #01CC32;
+    outline: 0;
+    width: 10rem;
+    padding-top: .2rem;
+    color: #fff;
+  }
+
+  .allondash{
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+  .allondash .leftmenu{
+     background-color:#01CC32;
+     height: 80%;
+     width: 10rem;
+     margin-top:5rem;
+     border-bottom-right-radius: 4rem;
+     float: left;
+     position: fixed;
+
+  }
+  .leftmenu ul li{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+
+    padding-top: 3rem;
+  }
+  li a{
+    list-style-type: none;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .photo1{
+    height: 40;
+    width: 100%;
+  }
+
+
+  @media (max-width: 858px){
+    .foot{
+      padding-left: 3rem;
+    }
+
+    .hed{
+      padding-left: 3rem;
+      font-size: 15px;
+    }
+    
+  .leftnav{
+  
+    width: 50%;
+  
+  }
+  .rightnav{
+  
+    width: 50%;
+    padding-right: 1rem;
+  }
+    label.logo{
+    color: white;
+    font-size: 20px;
+    line-height: 60px;
+    padding: 0 0px;
+  }
+   .login{
+    max-height: fit-content;
+    max-width: 17rem;
+    margin: auto;
+    margin-top: 3%;
+    font-size: 20px;
+ 
+  }
+  input[type="button"] {
+    border: 1px solid #01CC32;
+    background-color: #03010E;
+    outline: 0;
+    border-radius: 4px;
+    margin-left: 10rem;
+    width: 20%;
+    color:#fff;
+
+  }
+
+  .place{
+    padding-left: 0rem;
+    padding-top: 7rem;
+  }
+  }
+
+
+  
