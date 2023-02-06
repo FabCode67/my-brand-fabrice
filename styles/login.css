@@ -105,10 +105,11 @@ body{
   }
 
   .place{
-    padding-left: 5rem;
-    padding-top: 2rem;
+    padding-left: 10%;
+    /* padding-top: 2rem; */
   }
 
+  
   
   input[type="button"] {
     border: 0;
@@ -245,7 +246,7 @@ body{
   }
    .login{
     max-height: fit-content;
-    max-width: 17rem;
+    max-width: 100%;
     margin: auto;
     margin-top: 3%;
     font-size: 20px;
@@ -263,8 +264,9 @@ body{
   }
 
   .place{
-    padding-left: 0rem;
-    padding-top: 7rem;
+    padding-left: 0%;
+    width: 100%;
+    padding-top: 0rem;
   }
   }
 

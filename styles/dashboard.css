@@ -11,6 +11,30 @@ body{
   background-color: #03010E;
  }
 
+
+ #confirm-box{
+  background-color: #03010E;
+  align-self: center;
+  width: 30%;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  margin-top: 10%;
+  border: 2px solid #01CC32;
+  border-radius: .5rem;
+ }
+ #confirm-box .btns{
+display: flex;
+justify-content: space-between;
+padding:  0rem  3rem  1rem 3rem ;  
+flex-basis: 100%;
+ }
+
+ .btns>div{
+  flex-basis: 45%;
+  background-color: gray;
+ }
+
  .continer{
   margin-left: 120px;
  }
@@ -328,7 +352,7 @@ table button{
     
   #uniq{
     padding-bottom: 1rem;
-    padding-right: 10rem;
+    /* padding-right: 10rem; */
   }
     .sidebar a {float: left;}
     div.content {margin-left: 0;}
@@ -369,7 +393,7 @@ table button{
   
 #uniq{
   padding-bottom: 1rem;
-  padding-right: 10rem;
+  /* padding-right: 10rem; */
 }
   .sidebar a {float: left;}
   div.content {margin-left: 0;}
