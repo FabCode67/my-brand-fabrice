@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./../styles/dashboard.css">
+    <link rel="stylesheet" href="./../styles/login.css">
+    <link rel="stylesheet" href="./../styles/addblog.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="sidebar">
+    <a class="active" href="#home" id="uniq">Fabrice</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="./querries.html">Queries</a>
+    <a href="./addblog.html">Add blog</a>
+    <a id="disable">Log Out</a>
+  </div>
+ 
+
+
+<div class="continer" id="super">
+
+  <div class="divs">
+    <div class="div1"> <a href="./users.html"><h2><b id="nuser"></b> Users</h2></a></div>
+    <div class="div2"> <a href="./moreblogs.html"><h2><b id="nblogs"></b> Blogs</h2></a></div>
+    <div class="div3"> <a href="./querries.html"><h2><b id="message"></b> Messages</h1></a></div>
+  </div>
+
+  <div class="dash" id="blogCard">
+    
+  </div>
+</div>
+  <!-- <div class="divblogs" style="background-color: yellow;" id="fetch">
+     <div class="divblog1" id="fetch">
+      
+     
+      <div class="contdiv1">
+        <div class="pic">
+          <img src="./../images/blog2.webp" alt="">
+        </div>
+        <div class="disc"><p>
+          Cats and dogs are the most popular pets in the world. Cats are more...
+          <i class="fa-solid fa-trash"></i> 
+          <a href="editblog.html"><i class="fa-solid fa-pen-to-square"></i></a> 
+        </p></div>
+      </div>
+    </div>
+    <div class="divblog1">
+      <div class="contdiv1">
+        <div class="pic">
+          <img src="./../images/blog3.jpg" alt="">
+        </div>
+        <div class="disc">
+          <p>
+            Visualizing colors in this way helps you choose color schemes by ...<i class="fa-solid fa-trash"></i> 
+            <a href="editblog.html"><i class="fa-solid fa-pen-to-square"></i></a>           </p>
+        </div>
+      </div>
+      <div class="contdiv1">
+        <div class="pic">
+          <img src="./../images/blog4.jpg" alt="">
+        </div>
+        <div class="disc"><p>Lorem ipsum dolor sit amet 
+          consectetur adipisicing elit. 
+          Sapiente alias <i class="fa-solid fa-trash"></i> 
+          <a href="editblog.html"><i class="fa-solid fa-pen-to-square"></i></a> </p></div>
+      </div>
+    </div> -->
+  
+  <!-- </div>
+</div>  -->
+
+
+
+    <script src="../scripts/fetchAllBlogs.js"></script>
+    <script src="../scripts/fetchUsers.js"></script>
+</body>
+</html>
