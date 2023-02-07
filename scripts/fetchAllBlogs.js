@@ -49,7 +49,7 @@ fetch('https://comfortable-eel-pinafore.cyclic.app/api/blog/',{mode:"cors"})
             <div class="buttons">
   
 
-              <div class="edit"><button id="det" type="button" onclick="edit('')"  ><i class="fa-solid fa-pen-to-square"></button></i></div>
+              <div class="edit"><a href="../pages/updateBlog.html?id=${blog._id}"<button id="det" type="button" onclick="editBlog('${blog}')"  ><i class="fa-solid fa-pen-to-square"></button></i> </a></div>
               <div class="delete"><button type="button" onclick="deleteBlog('${blog._id}')" ><i class="fa-solid fa-trash"></i></button></div>
             </div>
             </div>`;
@@ -90,6 +90,69 @@ async function deleteBlog(Id) {
 
 }
 
+
+
+// function editBlog(Id){
+// let editFotm =  `<div class="login">
+// <div class="place">
+
+//     <div class="hed" id="hed"><h3>ADD BLOG</h3></div>
+    
+//     <div class="change"> <input type="text" id="edit_blog_title" value = ${Id.blogTitle}>
+//         <p id="error1" style="color: red;"></p>
+//     </div>
+  
+//     <div class="content">
+       
+//               <input name="art_id" type="hidden"><div id="visual-editor">
+//               <div id="editor" class="pell"></div></div><div id="source-editor" style="background-color: aqua;">
+//               <textarea class="text1" id="html-output" name="html-output" onchange="TextArea()" onblur="TextArea()" rows="10" cols="50">${Id.blogContent}</textarea>
+//               <p id="error2" style="color: red;"></p>
+
+//             </div>
+       
+//             </div>
+
+//     <div class="change"><input type="file" id="image" placeholder="UPLOAD PHOTO"></div>
+//     <div class="change"></div><button id="insertt"  style="color: rgb(253, 255, 254); width: 88%; background-color: green;">INSERT</button></div>
+
+   
+// </div>
+
+// </div>
+
+// </div>
+
+// </form>
+
+// <script src="../scripts/addBlog.js"></script>
+// <script src="../scripts/textEditor.js"></script>
+
+// <script>
+// var editor = window.pell.init({
+// element: document.getElementById('editor'),
+// actions: ['bold', 'italic', 'underline', 'heading1', 'heading2', 'olist', 'ulist', 'link', 'image', 'justifyLeft', 'justifyRight', 'justifyCenter', 'justifyFull'],
+// defaultParagraphSeparator: 'p',
+// onChange: function (html) {
+// document.getElementById('html-output').value   = html
+// }
+// })
+// editor.content.innerHTML = document.getElementById('html-output').value
+// function TextArea(){
+// editor.content.innerHTML = document.getElementById('html-output').value
+// }function toggleEditor() {
+// if (document.getElementById("source-editor").style.display == "none") {
+// document.getElementById("source-editor").style.display = "block";
+// document.getElementById("visual-editor").style.display = "none";
+// document.getElementById("btn_lbl").value = "Visual Editor";
+// } else {
+// document.getElementById("source-editor").style.display = "none";
+// document.getElementById("visual-editor").style.display = "block";
+// document.getElementById("btn_lbl").value = "Source Editor";
+// }
+// }`;
+// document.getElementById("super").innerHTML = editFotm;
+// }
   
 
 

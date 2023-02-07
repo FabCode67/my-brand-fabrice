@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>update blog</title>
+    <link rel="stylesheet" href="./../styles/login.css">
+    <link rel="stylesheet" href="./../styles/dashboard.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.cdnfonts.com/css/kanit-2" rel="stylesheet">
+                
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./../styles/addblog.css">
+     <link rel="stylesheet" href="../styles/textEditor.css">
+
+     
+     </style>
+</head>
+<body><div class="sidebar">
+  <a class="active" href="" id="uniq">Fabrice</a>
+  <a href="dashboard.html">Dashboard</a>
+  <a href="./../index.html">Blogs</a>
+  <a href="addblog.html">Add blog</a>
+  <a href="login.html">Log Out</a>
+</div>
+<style>
+  img{
+    height: 1.4rem;
+  }
+</style>
+
+  <form action="" id="addblogform">
+    <div class="login">
+        <div class="place">
+
+            <div class="hed" id="hed"><h3>UPDATE BLOG</h3></div>
+            
+            <div class="change"> <input type="text" id="blog_title" placeholder="Blog title">
+                <p id="error1" style="color: red;"></p>
+            </div>
+          
+            <div class="content">
+               
+                      <input name="art_id" type="hidden"><div id="visual-editor">
+                      <div id="editor" class="pell"></div></div><div id="source-editor" style="background-color: aqua;">
+                      <textarea class="text1" id="html-output" name="html-output" onchange="TextArea()" onblur="TextArea()" rows="10" cols="50"></textarea>
+                      <p id="error2" style="color: red;"></p>
+
+                    </div>
+               
+                    </div>
+
+            <div class="change"><input type="file" id="image" placeholder="UPLOAD PHOTO"></div>
+            <div class="change"></div><button id="insertt"  style="color: rgb(253, 255, 254); width: 88%; background-color: green;">UPDATE</button></div>
+
+           
+        </div>
+      
+      </div>
+
+</div>
+  
+  </form>
+
+  <script src="../scripts/updateBlog.js"></script>
+<script src="../scripts/textEditor.js"></script>
+
+<script>
+    var editor = window.pell.init({
+      element: document.getElementById('editor'),
+      actions: ['bold', 'italic', 'underline', 'heading1', 'heading2', 'olist', 'ulist', 'link', 'image', 'justifyLeft', 'justifyRight', 'justifyCenter', 'justifyFull'],
+      defaultParagraphSeparator: 'p',
+      onChange: function (html) {
+        document.getElementById('html-output').value   = html
+      }
+    })
+   editor.content.innerHTML = document.getElementById('html-output').value
+   function TextArea(){
+   editor.content.innerHTML = document.getElementById('html-output').value
+   }function toggleEditor() {
+   if (document.getElementById("source-editor").style.display == "none") {
+      document.getElementById("source-editor").style.display = "block";
+      document.getElementById("visual-editor").style.display = "none";
+      document.getElementById("btn_lbl").value = "Visual Editor";
+   } else {
+      document.getElementById("source-editor").style.display = "none";
+      document.getElementById("visual-editor").style.display = "block";
+      document.getElementById("btn_lbl").value = "Source Editor";
+   }
+   }
+  </script>
+  </body>
+
+  </html>
