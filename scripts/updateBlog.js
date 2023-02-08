@@ -15,6 +15,35 @@
 //  mores =
 
 
+let loading = `<style>
+  .loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    padding-left: 80%
+    border-top: 16px solid black;
+    border-bottom: 16px solid green;
+    width: 10px;
+    height: 10px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  </style>
+  </head>
+  <body>  
+  <div class="loader" style="margin-left:20%;"></div>
+  `
+
+
 let updateBlogForm = document.getElementById("addblogform");
 let blogTitle = document.getElementById("blog_title");
 let blogContent = document.getElementById("html-output");
@@ -33,6 +62,7 @@ fetch('https://comfortable-eel-pinafore.cyclic.app/api/blog/',{mode:"cors"})
         blogContent.value = blog.blogImage
     })})
 updateBlogForm.addEventListener('submit', (event) => {
+  document.getElementById('hed').innerHTML = loading;
   event.preventDefault();
   console.log(getId);
   const formData = new FormData();
@@ -50,8 +80,12 @@ updateBlogForm.addEventListener('submit', (event) => {
   .then((response) => response.json())
   .then((blog) => {
     console.log('Success:', blog);
+    if(blog.message == "Blog updated successfully"){
+      window.location.href='../pages/dashboard.html'
+    }
   })
   .catch((error) => {
     console.error('Error:', error);
   });
+  
 });
