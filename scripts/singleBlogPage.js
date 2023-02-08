@@ -5,8 +5,8 @@ let loading = `<style>
     padding-left: 80%
     border-top: 16px solid black;
     border-bottom: 16px solid green;
-    width: 6px;
-    height: 6px;
+    width: 4px;
+    height: 4px;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
   }
@@ -113,6 +113,7 @@ function clearForm(){
 }
 
 addComment.addEventListener('submit',(e)=>{
+  document.getElementById('but').innerHTML= loading;
     e.preventDefault()
     const data = { 
             comment:comment.value,
