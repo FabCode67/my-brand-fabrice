@@ -45,14 +45,11 @@ fetch('https://comfortable-eel-pinafore.cyclic.app/api/blog/',{mode:"cors"})
               </p>
           </div>
           <div class="undercont">
-        
           </div>                   
-   
       </div>
    </div>`;
     });
 })
-
 
 var moreblog =  new URLSearchParams(window.location.search) 
 var getId = moreblog.get("id")
@@ -114,6 +111,7 @@ function clearForm(){
 
 addComment.addEventListener('submit',(e)=>{
   document.getElementById('but').innerHTML= loading;
+  document.getElementById('but').style.border= "none";
     e.preventDefault()
     const data = { 
             comment:comment.value,
@@ -140,8 +138,7 @@ addComment.addEventListener('submit',(e)=>{
     .catch((error) => {
       console.error('Error:', error);
     });
-    // clearForm();
- 
+    clearForm();
 })
 
     var commentCards = ''
