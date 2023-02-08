@@ -6,7 +6,6 @@ let token = localStorage.getItem("token");
 
 addBlogForm.addEventListener('submit', (event) => {
   event.preventDefault();
-
   const formData = new FormData();
   formData.append('blogTitle', blogTitle.value);
   formData.append('blogContent', blogContent.value);
@@ -18,7 +17,6 @@ addBlogForm.addEventListener('submit', (event) => {
       'Authorization': token,
     },
     body: formData
-    
 })
 .then((response) => response.json())
 .then((blog) => {
