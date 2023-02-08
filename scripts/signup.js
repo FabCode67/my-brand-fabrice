@@ -49,6 +49,33 @@ regester.addEventListener('click',(e)=>{
     .catch((error) => {
       console.error('Error:', error);
     });
+    if(email.value==""){
+        document.getElementById("email").innerHTML="email can't be empty!"
+    }
+    else if(email.value!=""){
+        document.getElementById("email").innerHTML=""
+    }
+    if(username.value==""){
+        document.getElementById("nam").innerHTML="username can't be empty!"
+    }
+    else if(username.value!=""){
+        document.getElementById("nam").innerHTML=""
+    }
+    if(password.value==""){
+        document.getElementById("secret").innerHTML="password can't be empty!"
+    }
+    else if(password.value!=""){
+        document.getElementById("secret").innerHTML=""
+    }
+    if(confirmPassword.value==""){
+        document.getElementById("confirm").innerHTML="confirm pasword can't be empty!"
+    }
+    else if(confirmPassword.value!=""){
+        document.getElementById("confirm").innerHTML=""
+    }
+    else {
     window.location.href="../pages/login.html"
     clearForm()
+    }
+    
 })

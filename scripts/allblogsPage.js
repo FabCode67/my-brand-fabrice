@@ -12,8 +12,8 @@ fetch('https://comfortable-eel-pinafore.cyclic.app/api/blog/',{mode:"cors"})
                 <h3>${blog.blogTitle}</h3>
                 <p>${blog.blogContent.substring(0, 110) + '...'}</p>
                 </div>
-                <div class="buttons">
-                <a href="moreblogs.html?id=${blog._id} "> <input type="button" value="more" style="width:100%;"> </a>           
+                <div class="buttons" style="display: block;">
+                <a href="moreblogs.html?id=${blog._id}"> <input type="button" value="more" style="width:100%; "> </a>           
                 </div>
                 </div>`;
     });

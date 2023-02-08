@@ -30,7 +30,7 @@ fetch('https://comfortable-eel-pinafore.cyclic.app/api/blog/',{mode:"cors"})
   let i = 0
     data.data.forEach(function(blog) {
         blogTitle.value= blog.blogTitle
-        blogContent.value= blog.blogContent
+        blogContent.value = blog.blogImage
     })})
 updateBlogForm.addEventListener('submit', (event) => {
   event.preventDefault();
