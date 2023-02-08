@@ -7,7 +7,7 @@ let loading = `<style>
   .loader {
     border: 16px solid #f3f3f3;
     border-radius: 50%;
-    padding-left: 80%
+    padding-left: 90%
     border-top: 16px solid black;
     border-bottom: 16px solid green;
     width: 10px;
@@ -39,6 +39,8 @@ function clearForm(){
 
 login.addEventListener('click',(e)=>{
     document.getElementById('invalid').innerHTML=loading
+    login.style.display ='none';
+
     e.preventDefault()
     const user = {
     username:username.value,
@@ -62,19 +64,23 @@ login.addEventListener('click',(e)=>{
 
     if(user.status == "fail"){
         localStorage.setItem("token", undefined);
-        invalid.innerHTML = `<p style="color:red;"><u>Invalid username or password</u></p>`;
+        invalid.innerHTML = `<p style="color:red; margin-left:-10%;"><u>Invalid username or password</u></p>`;
         setTimeout(()=>{
             invalid.innerHTML = `<h3 >LOGIN HERE</h3>` 
         },2000)
+        login.style.display ='block';
+
         return
     }
     else{
         localStorage.setItem("token", user.data);
         if(user.role === 'isAdmin'){
+            login.style.display ='none';
             window.location.href="../pages/dashboard.html"
                  }
         else{
-            window.location.href="../pages/allblogs.html"
+          login.style.display ='none';
+          window.location.href="../pages/allblogs.html"
                  }
 
     }

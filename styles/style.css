@@ -131,7 +131,7 @@
   .seemore{
     text-align: center;
      margin: auto; 
-     margin-left: 35rem; 
+     margin-left: 40%; 
      padding-top: 1rem;
      padding-bottom: 1rem;
       margin-top: 1rem;
@@ -562,10 +562,7 @@
 
   @media (max-width: 858px){
 
-    .seemore{
-      margin-left: 6rem; 
-    }
-
+    
  
     .footer{
       padding-top: 0rem;
