@@ -117,13 +117,9 @@ body{
     border: 1px solid #01CC32;
     cursor: pointer;
     outline: 0;
-    margin-left: 21rem;
-    width: 15%;
+    width: 100%;
     color:#fff;
     border-radius: 4px;
-    margin-left: 12rem;
-    width: 17%;
-
   }
 
   input[type="button"]:hover{
@@ -136,7 +132,7 @@ body{
     background-color: #03010E;
     border-bottom: 1px solid #01CC32;
     outline: 0;
-    width: 85%;
+    width: 100%;
     padding-top: 1rem;
     color: #fff;
   }
@@ -146,7 +142,7 @@ body{
     background-color: #03010E;
     border-bottom: 1px solid #01CC32;
     outline: 0;
-    width: 85%;
+    width: 100%;
     padding-top: 1rem;
     color: #fff;
   }
@@ -160,7 +156,6 @@ body{
   .discript h3{
     text-align: start;
     width: 100%;
-    margin-top: 0rem;
   }
 
   .hed{
@@ -220,7 +215,7 @@ body{
 
   @media (max-width: 858px){
     .foot{
-      padding-left: 3rem;
+      padding-left: 25%;
     }
 
     .hed{
@@ -257,18 +252,80 @@ body{
     background-color: #03010E;
     outline: 0;
     border-radius: 4px;
-    margin-left: 10rem;
-    width: 20%;
     color:#fff;
 
   }
-
+/* .hed{
+padding-left: 110%;
+} */
   .place{
     padding-left: 0%;
     width: 100%;
-    padding-top: 0rem;
+    padding-top: 10%;
+    padding-left: 0%;
   }
   }
 
 
-  
+  @media only screen and (min-width: 820px) and (max-width: 1180px) {
+    .place{
+      padding-top: 0%;
+    }
+    input[type="button"] {
+      font-size: 40px;
+
+    }
+
+    input[type="text"] {
+      font-size: 40px;
+    }
+    
+    input[type="password"] {
+      font-size: 40px;
+    }
+
+    .login{
+      font-size: 40px;
+      margin-top: 40%;
+      padding: 0;
+
+    }
+     h3{
+      font-size: 40px;
+      width: 20rem;
+      text-align:inherit;
+      border-bottom-width:0;
+    }
+  }
+
+
+  /* @media only screen and (min-width: 768px) and (max-width: 1180px) {
+    .place{
+      padding-top: 0%;
+    }
+    input[type="button"] {
+      font-size: 40px;
+
+    }
+
+    input[type="text"] {
+      font-size: 40px;
+    }
+    
+    input[type="password"] {
+      font-size: 40px;
+    }
+
+    .login{
+      font-size: 40px;
+      margin-top: 40%;
+      padding: 0;
+
+    }
+     h3{
+      font-size: 40px;
+      width: 20rem;
+      text-align:inherit;
+      border-bottom-width:0;
+    }
+  } */

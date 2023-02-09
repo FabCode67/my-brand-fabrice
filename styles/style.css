@@ -129,19 +129,19 @@
   }
   
   .seemore{
-    text-align: center;
-     margin: auto; 
+     text-align: center;
+     /* margin: auto;  */
      margin-left: 40%; 
-     padding-top: 1rem;
-     padding-bottom: 1rem;
-      margin-top: 1rem;
-       margin-bottom: 1rem;
-        border-radius: 1rem;
-         background-color: rgb(8, 202, 50);
+     padding-top: 1%;
+     padding-bottom: 1%;
+     margin-top: 1rem;
+     margin-bottom: 1rem;
+     border-radius: .6rem;
+     background-color: rgb(8, 202, 50);
      color: white; 
      cursor: pointer; 
      padding-left: 1rem;
-      padding-right: 1rem;
+     padding-right: 1rem;
   }
 
   .linec{
@@ -430,7 +430,7 @@
   flex-basis: 30%;
   margin-left: 6%;
   padding-right: 0rem;
-  align-self: center;
+  align-self: auto;
   height: 70%;
   box-shadow: 0px 0px 40px black;
 }
@@ -562,8 +562,6 @@
 
   @media (max-width: 858px){
 
-    
- 
     .footer{
       padding-top: 0rem;
       padding: 0rem;
@@ -590,20 +588,20 @@
     }
 
     .socialup>div{
-      text-align: left;
-      padding-top: 0rem;
+      /* text-align: left; */
+      padding-top: 3%;
     }
     .socialdown>div{
-      text-align: left;
-      padding-top: 0rem;
+       /* text-align: left; */
+       padding-top: 3%;
     }
     .skillrig>div{
-      text-align: left;
-      padding-top: 0rem;
+      /* text-align: left; */
+      padding-top: 3%;
     }
     .skilllef>div{
-      text-align: left;
-      padding-top: 0rem;
+      /* text-align: left; */
+      padding-top: 3%;
     }
     .generalrefer .abt{
       margin-top: 2rem;
@@ -611,10 +609,14 @@
       line-height: 1.5rem;
       
     }
-    
- 
+
+    .seemore{
+      text-align: center;
+      /* margin: auto;  */
+      margin-left: 30%; 
+   }
   .allcontact{
-    height: 53rem;
+    height: 40rem;
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 0;
@@ -623,6 +625,7 @@
       align-self: center;
       flex-basis: 98%;
       padding: 1rem;
+      width: 100%;
       height: 78%;
       display: flex;
       flex-direction: column;
@@ -630,8 +633,9 @@
     }
     .leftcontact{
       padding: .2rem;
-      flex-basis: 80%;
+      /* flex-basis: 80%; */
       line-height: 1.5rem;
+      width: 100%;
       height: 100%;
     }
     .rightcontact{
@@ -639,19 +643,20 @@
       margin-top: -7rem;
       padding: 0rem;
       flex-basis: 100%;
+      width: 100%;
     }
      .pargraph{
       width: 100%;
      }
     input[type="text"] {
       padding-top: 1rem;
-      width: 20rem;
+      width: 100%;
     }
     input[type="button"] {
-      width: 7rem;
+      width: 100%;
     }
     textarea{
-      width: 20rem;
+      width: 100%;
     }
 
     #ports{
@@ -667,7 +672,7 @@
     }
 
     .allblog>div{
-            margin-top: 0rem;
+       margin-top: 0rem;
       flex-basis: 80%;
       max-height: fit-content;
       box-shadow: 0px 0px 40px black;
@@ -748,9 +753,7 @@
 
 .allmainf>div{
   margin: 0;
- 
   flex-basis: 49%;
-
 }
 .mainf p{
   padding-top: 1rem;
@@ -766,3 +769,25 @@
 }
   }
 
+
+/* 
+  @media only screen and (min-width: 768px) and (max-width: 1000px) {
+    .name {
+      font-size: 55px;
+       }
+  .desc {
+    font-size: 30px;
+    }
+  .hello{
+    font-size: 34px;
+  }  
+
+  .download button {
+    font-size: 30px;
+    padding: 2rem;
+    height: inherit;
+  }
+  .links i {
+    font-size: xx-large;
+}
+  } */
