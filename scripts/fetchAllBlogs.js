@@ -35,7 +35,7 @@ fetch('https://comfortable-eel-pinafore.cyclic.app/api/blog/',{mode:"cors"})
 .then(res => res.json())
 .then(data => {
   let i = 0
-    data.data.forEach(function(blog) {
+    data.data.reverse().forEach(function(blog) {
         dataContainer.innerHTML += `
         <div class="subdiv">
             <div class="photo">
@@ -43,7 +43,7 @@ fetch('https://comfortable-eel-pinafore.cyclic.app/api/blog/',{mode:"cors"})
            
             </div>
             <div class="discript">
-            <h3 class="modify">${blog.blogTitle}</h3>
+            <h3 class="modify">${blog.blogTitle.substring(0, 20) + '...'}</h3>
             <p>${blog.blogContent.substring(0, 110) + '...'}</p>
             </div>
             <div class="buttons">

@@ -3,7 +3,7 @@ fetch('https://comfortable-eel-pinafore.cyclic.app/api/user/',{mode:"cors"})
 .then(res => res.json())
 .then(data => {
     let i =1
-    data.data.forEach(function(user) {
+    data.data.reverse().forEach(function(user) {
         tbBody.innerHTML +=
          `
         <tr>
