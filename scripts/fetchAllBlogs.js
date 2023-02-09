@@ -92,3 +92,45 @@ async function deleteBlog(Id) {
 }
 
 
+
+
+fetch(`https://comfortable-eel-pinafore.cyclic.app/api/contact/count`, {
+  mode:'cors',
+  method: 'GET',
+  headers: {
+     
+   "Content-Type": "application/json",
+  }
+})
+.then(response => 
+     response.json()
+  )
+.then(data=>{
+console.log(data)
+document.getElementById('message').innerHTML = data.message
+})    
+.catch(error => {
+  console.error("Error counting user");
+});
+
+
+fetch(`https://comfortable-eel-pinafore.cyclic.app/api/user/count`, {
+  mode:'cors',
+  method: 'GET',
+  headers: {
+   "Content-Type": "application/json",
+   "Authorization" : localStorage.getItem("token")
+
+  }
+})
+.then(response => 
+     response.json()
+  )
+.then(data=>{
+console.log(data)
+document.getElementById('nuser').innerHTML = data.message
+})    
+.catch(error => {
+  console.error("Error counting user");
+});
+
