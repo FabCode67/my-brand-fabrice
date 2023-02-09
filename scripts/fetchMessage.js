@@ -3,7 +3,7 @@ fetch('https://comfortable-eel-pinafore.cyclic.app/api/contact/',)
 .then(res => res.json())
 .then(data => {
     let i =1
-    data.data.forEach(function(message) {
+    data.data.reverse().forEach(function(message) {
         tbBody.innerHTML +=
          `
         <tr>

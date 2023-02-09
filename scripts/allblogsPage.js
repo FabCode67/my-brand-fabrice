@@ -2,7 +2,7 @@ let dataContainer =  document.getElementById("blogCard")
 fetch('https://comfortable-eel-pinafore.cyclic.app/api/blog/',{mode:"cors"})
 .then(res => res.json())
 .then(data => {
-    data.data.forEach(function(blog) {
+    data.data.reverse().forEach(function(blog) {
         dataContainer.innerHTML += `
         <div class="subdiv">
                 <div class="photo">
