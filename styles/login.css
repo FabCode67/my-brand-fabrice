@@ -94,7 +94,7 @@ body{
     margin-top: 1rem;
     margin: auto;
     padding: 2rem;
-    box-shadow: 0px 0px 40px black;
+    box-shadow: 0px 0px inherit black;
     color: #fff;
     
 
@@ -264,6 +264,9 @@ padding-left: 110%;
     padding-top: 10%;
     padding-left: 0%;
   }
+  .login{
+    width: inherit;
+  }
   }
 
 
@@ -272,26 +275,25 @@ padding-left: 110%;
       padding-top: 0%;
     }
     input[type="button"] {
-      font-size: 40px;
+      font-size: inherit;
 
     }
 
     input[type="text"] {
-      font-size: 40px;
+      font-size: inherit;
     }
     
     input[type="password"] {
-      font-size: 40px;
+      font-size: inherit;
     }
 
     .login{
-      font-size: 40px;
-      margin-top: 40%;
+      font-size: inherit;
+      margin-top: 10%;
       padding: 0;
-
     }
      h3{
-      font-size: 40px;
+      font-size: inherit;
       width: 20rem;
       text-align:inherit;
       border-bottom-width:0;
@@ -304,26 +306,26 @@ padding-left: 110%;
       padding-top: 0%;
     }
     input[type="button"] {
-      font-size: 40px;
+      font-size: inherit;
 
     }
 
     input[type="text"] {
-      font-size: 40px;
+      font-size: inherit;
     }
     
     input[type="password"] {
-      font-size: 40px;
+      font-size: inherit;
     }
 
     .login{
-      font-size: 40px;
+      font-size: inherit;
       margin-top: 40%;
       padding: 0;
 
     }
      h3{
-      font-size: 40px;
+      font-size: inherit;
       width: 20rem;
       text-align:inherit;
       border-bottom-width:0;

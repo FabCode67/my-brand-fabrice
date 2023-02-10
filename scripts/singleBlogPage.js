@@ -134,6 +134,11 @@ addComment.addEventListener('submit',(e)=>{
       if(data.message == "Comment added successfully"){
       window.location.href = `moreblogs.html?id=${blog._id}`
       }
+      else{
+        document.getElementById('but').innerHTML= `<a href="../pages/login.html" style="cursor: pointer;
+        text-decoration: underline;
+        color: blue;">${data.message}</a>`;
+      }
     })
     .catch((error) => {
       console.error('Error:', error);
@@ -157,8 +162,14 @@ addComment.addEventListener('submit',(e)=>{
          `
          nOfCComment++
        }
-    
-   document.getElementById("nofComents").innerHTML =nOfCComment;
+       if(localStorage.getItem('token')=='undefined'||localStorage.getItem('token')==''){
+        document.getElementById("nofComents").innerHTML =`<a href="../pages/login.html" style="cursor: pointer;
+        text-decoration: underline;
+        color: blue;">Login</a><span> to add </span>`;
+      }else{
+        document.getElementById("nofComents").innerHTML =nOfCComment;
+
+      }
    document.getElementById("commentsCard").innerHTML= commentCards
 });
 
