@@ -36,6 +36,8 @@ async function deleteMessage(Id){
         method: 'DELETE',
         headers: {
             "Content-Type": "application/json",
+             "Authorization": token,
+
         },
     })
     .then(response => 

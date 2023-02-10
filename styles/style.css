@@ -652,9 +652,9 @@
       padding-top: 1rem;
       width: 100%;
     }
-    input[type="button"] {
+    /* input[type="button"] {
       width: 100%;
-    }
+    } */
     textarea{
       width: 100%;
     }
