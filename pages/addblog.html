@@ -19,20 +19,55 @@
    input[type="text"] {
     width: 85%;
     }
+    img{
+    height: 1.4rem;
+  }
+
+  h3 {
+    border-bottom: none;
+    width: 80%;
+    text-align: inherit;
+    padding-left: 0;
+}
+@media (max-width: 858px){
+.hed {
+    text-align: center;
+    padding-left: 0%;
+
+}
+}
      </style>
 </head>
-<body><div class="sidebar">
+<body>
+<script>
+  
+fetch('https://comfortable-eel-pinafore.cyclic.app/api/profile/', {
+   
+    headers: {
+      "Authorization": localStorage.getItem("token"),
+    }
+})
+.then(res => res.json())
+.then(data => {
+  console.log(data.data.email);
+  if (localStorage.getItem("token")=='undefined'|| data.data.email!='fab@gmail.com') {
+  window.location.href = "./login.html";
+    }
+})
+.catch(()=>{
+  window.location.href = "./login.html";
+})
+
+</script>  
+  <div class="sidebar">
   <a class="active" href="../index.html" id="uniq">Fabrice</a>
   <a href="dashboard.html">Dashboard</a>
   <a href="./../index.html">Blogs</a>
   <a href="addblog.html">Add blog</a>
-  <a href="./pages/login.html" id="signout">Logout</a>
+  <a href="./login.html" id="signout">Logout</a>
 </div>
-<style>
-  img{
-    height: 1.4rem;
-  }
-</style>
+
+
 
   <form action="" id="addblogform">
     <div class="login">
@@ -68,8 +103,7 @@
   </form>
 
   <script src="../scripts/addBlog.js"></script>
-  <script src="../scripts/logout.js"></script>
-<script src="../scripts/textEditor.js"></script>
+  <script src="../scripts/textEditor.js"></script>
 
 <script>
     var editor = window.pell.init({
@@ -96,5 +130,7 @@
    }
   </script>
   </body>
-
+  <script>
+    document.getElementById('signout').addEventListener('click', ()=>localStorage.setItem("token", undefined))
+  </script>
   </html>

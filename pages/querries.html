@@ -8,6 +8,7 @@
 <title>Querries</title>
 </head>
 <body>
+<script src="../scripts/security.js"></script>
     <div class="sidebar">
         <a class="active" href="../index.html" id="uniq">Fabrice</a>
         <a href="dashboard.html">Dashboard</a>
@@ -33,4 +34,7 @@
 </div>
 <script src="../scripts/fetchMessage.js"></script>
 </body>
+<script>
+  document.getElementById('signout').addEventListener('click', ()=>localStorage.setItem("token", undefined))
+</script>
 </html>

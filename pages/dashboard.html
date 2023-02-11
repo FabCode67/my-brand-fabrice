@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./../styles/dashboard.css">
     <link rel="stylesheet" href="./../styles/login.css">
     <link rel="stylesheet" href="./../styles/addblog.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <style>
@@ -27,16 +26,14 @@
 </style>
 </head>
 <body>
+<script src="../scripts/security.js"></script>
   <div class="sidebar">
     <a class="active" href="../index.html" id="uniq">Fabrice</a>
     <a href="dashboard.html">Dashboard</a>
     <a href="./querries.html">Queries</a>
     <a href="./addblog.html">Add blog</a>
-    <a href="./login.html" id="disable">Logout</a>
+    <a href="./login.html" id="signout">Logout</a>
   </div>
- 
-
-
 <div class="continer" id="super">
 
   <div class="divs">
@@ -56,6 +53,9 @@
   <div class="dash" id="blogCard">
   </div>
 </div>
-    <script src="../scripts/fetchAllBlogs.js"></script>
+<script src="../scripts/fetchAllBlogs.js"></script>
 </body>
+<script>
+  document.getElementById('signout').addEventListener('click', ()=>localStorage.setItem("token", undefined))
+</script>
 </html>
