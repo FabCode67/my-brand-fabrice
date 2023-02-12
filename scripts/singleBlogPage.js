@@ -162,7 +162,7 @@ addComment.addEventListener('submit',(e)=>{
          `
          nOfCComment++
        }
-       if(localStorage.getItem('token')=='undefined'||localStorage.getItem('token')==''){
+       if(localStorage.getItem('token')=='undefined'||localStorage.getItem('token')==''||!localStorage.getItem('token')){
         document.getElementById("nofComents").innerHTML =`<a href="../pages/login.html" style="cursor: pointer;
         text-decoration: underline;
         color: blue;">Login</a><span> to add </span>`;

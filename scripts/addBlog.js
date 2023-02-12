@@ -69,7 +69,7 @@ else if(blog.status == 'success'){
     document.getElementById('insertt').innerHTML= `INSERT`
     document.getElementById('insertt').style.backgroundColor='#01CC32'
 
-    addBlogForm.reset()
+    window.location.href = "../pages/addBlog.html"
 }
 
 
