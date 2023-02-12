@@ -1,5 +1,5 @@
 let token = localStorage.getItem('token');
-if(token=='undefined'){
+if(token=='undefined'|| !token){
 document.getElementById('signout').innerHTML = "Login"
 }
 else{
