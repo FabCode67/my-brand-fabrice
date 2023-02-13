@@ -1,9 +1,7 @@
-
-let token = localStorage.getItem("token");
 fetch('https://comfortable-eel-pinafore.cyclic.app/api/profile/', {
    
     headers: {
-      "Authorization": token,
+      "Authorization": localStorage.getItem("token")
     }
 })
 .then(res => res.json())
