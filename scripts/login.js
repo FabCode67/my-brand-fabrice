@@ -85,7 +85,10 @@ login.addEventListener('click',(e)=>{
 
     }
     })
-   
+    .catch((error) => {
+      document.getElementById('invalid').innerHTML=`<p style="text-align:center;margin-left:-5rem;float:left"> timeout! 💭 Check your connection and <a href='./login.html' style="color:green;font-size:20px;">refresh</a> the page</p>`
+    });
+    
     })
 
 

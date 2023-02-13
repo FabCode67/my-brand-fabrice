@@ -53,14 +53,14 @@ let token = localStorage.getItem("token");
 var getBlogById =  new URLSearchParams(window.location.search) 
 var getId = getBlogById.get("id")
 
-fetch('https://comfortable-eel-pinafore.cyclic.app/api/blog/',{mode:"cors"})
+fetch(`https://comfortable-eel-pinafore.cyclic.app/api/blog/${getId}`,{mode:"cors"})
 .then(res => res.json())
 .then(data => {
-  let i = 0
-    data.data.forEach(function(blog) {
+        let blog = data.data;
         blogTitle.value= blog.blogTitle
-        blogContent.value = blog.blogImage
-    })})
+        blogContent.value = blog.blogContent
+        console.log(blog.blogContent);
+    })
 updateBlogForm.addEventListener('submit', (event) => {
   document.getElementById('hed').innerHTML = loading;
   event.preventDefault();

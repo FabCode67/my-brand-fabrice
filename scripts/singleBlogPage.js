@@ -27,6 +27,35 @@ let loading = `<style>
   `
 
 
+
+  let loading1 = `<style>
+  .loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 80%;
+    padding-left: 80%
+    border-top: 16px solid black;
+    border-bottom: 16px solid green;
+    width: 15px;
+    height: 15px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  </style>
+  </head>
+  <body>  
+  <div class="loader" style="margin-left:50%; margin-top:20%; "></div>
+  `
+
 var dataContainer =  document.getElementById("blo")
 fetch('https://comfortable-eel-pinafore.cyclic.app/api/blog/',{mode:"cors"})
 .then(res => res.json())
@@ -56,8 +85,9 @@ var getId = moreblog.get("id")
 
 
 console.log(getId);
+document.getElementById("alb").innerHTML=loading1
 
-let mores = ''
+let mores = loading
 fetch(`https://comfortable-eel-pinafore.cyclic.app/api/blog/${getId}`, {
   method: "GET",
   headers: {
