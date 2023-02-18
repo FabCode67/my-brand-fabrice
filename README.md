@@ -28,7 +28,7 @@
 - Css
 
 ## Ho to run it
-- flow this link http://fabcode67.github.io/CAPSTONE/#
+- flow this link http://fabcode67.github.io/my-brand-fabrice/#
 
 ## Environments
 - cyclic
