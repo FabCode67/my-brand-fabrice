@@ -400,7 +400,7 @@
     color:#fff;
   }
   input[type="button"]:hover{
-    box-shadow: 0px 0px 20px white;
+    box-shadow: 0px 0px 5px white;
   }
    .blogs{
     padding-top: 4rem;
@@ -423,7 +423,7 @@
 .viewmore:hover{
   transition: 1s;
   font-size: 16px;
-  box-shadow: 0px 0px 20px black;
+  box-shadow: 0px 0px 10px black;
 
 }
 .allblog{
@@ -440,10 +440,10 @@
   padding-right: 0rem;
   align-self: auto;
   height: 70%;
-  box-shadow: 0px 0px 40px black;
+  box-shadow: 0px 0px 10px black;
 }
 .allblog>div:hover{
-  box-shadow: 0px 0px 50px rgb(209, 206, 206);
+  box-shadow: 0px 0px 10px rgb(209, 206, 206);
   transition: 1s;
 }
 .photo1{
@@ -518,7 +518,7 @@
     padding: 3rem;
     height: 78%;
     display: flex;
-    box-shadow: 0px 0px 40px black;
+    box-shadow: 0px 0px 10px black;
   }
 
   .leftcontact{
@@ -637,7 +637,7 @@
       height: 78%;
       display: flex;
       flex-direction: column;
-      box-shadow: 0px 0px 40px black;
+      box-shadow: 0px 0px 10px black;
     }
     .leftcontact{
       padding: .2rem;
@@ -683,7 +683,7 @@
        margin-top: 0rem;
       flex-basis: 80%;
       max-height: fit-content;
-      box-shadow: 0px 0px 40px black;
+      box-shadow: 0px 0px 10px black;
       padding-top: 5%;
     }
     .checkbtn{
