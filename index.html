@@ -36,7 +36,7 @@
     white-space: nowrap; /* Prevents text from wrapping */
     ">
     <p id="typing-text">HELLO GOOD PEOPLE, MY UI IS UNDER CONSTRUCTION,</p>
-    <p style="border: 2px solid skyblue; width: fit-content; padding: 4px; justify-self: center; display: flex; margin: auto;" >MEANWHILE YOU CAN USE THE TERMINAL BELOW TO INTERACT WITH ME. THANK YOU.</p>
+    <p class="text" >MEANWHILE YOU CAN USE THE TERMINAL BELOW TO INTERACT WITH ME. THANK YOU.</p>
 </div>
 
  <div class="cli-container">
@@ -44,7 +44,9 @@
         </div>
         <div class="input-area" class="flex">
             <span class="prompt">fabrice@fabrice:~$</span>
+            <form method="post">
             <input type="text" id="command-input" placeholder="help">
+            </form>
         </div>
     </div>
     <script src="script.js"></script>
