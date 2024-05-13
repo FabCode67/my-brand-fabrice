@@ -1,809 +1,106 @@
-*{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-    font-family: 'Kanit', sans-serif;
-
-  }
-
-  
-   section{
-    padding-top: 1rem;
-   }
-  
-  body{
-    font-family: 'Kanit', sans-serif;
-    color: #ffff;
-    background-color:#03010E;
-
-   }
- html{
-  scroll-behavior: smooth;
- }
- a{
+/* style.css */
+body {
+  background-color: #000;
   color: #fff;
- }
-
- 
-
-.nav{
-  height: 5rem;
-  top: 0;
-  display: flex;
-  position: fixed;
-  width: 100%;
-  background-color: #03010E;
-
-}
-
-.leftnav{
-  height: 5rem;
-  top: 0;
-  width: 40%;
-  background-color: #03010E;
-
-}
-.rightnav{
-  border-bottom-left-radius: 3rem;
-  height: 5rem;
-  top: 0;
-  width: 57%;
-}
-
-.rightnav ul li{
-  padding-top: 1rem;
-}
-  label.logo{
-    color: white;
-    font-size: 30px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
-  }
- 
-  .div1{
-    background-color:  #03010E;
-    height: 96%;
-    width: 100%;
-    display: flex;
-    margin-top: 4rem;
-    top: 0;
-  }
-  .lefth{
-     height: 100%;
-     width: 40%;
-     padding-left: 6rem;
-     padding-top: 8rem;
-     color: #ffff;
-  }
-   
-   p .hello{
-    font-size: 16px;
-   }
-   .name{
-    padding-top: 2rem;
-    font-weight: bold;
-    font-size: 30px;
-   }
-   .desc{
-    padding-top: 1rem;
-    color: green;
-    font-size: 15px;
-   }
-  .righth{
-    height: 100%;
-    width: 60%;
- }
- img{
-    margin: auto;
-    height: 100%;
-    width:100%;
- }
-
-  .rightnav ul{
-    float: right;
-    margin-right: 15px;
-  }
-  .rightnav ul li{
-    display: inline-block;
-    line-height: 50px;
-    margin: 0 5px;
-  }
-  .rightnav ul li a{
-    color: white;
-    font-size: 12px;
-    font-family: 'Kanit', sans-serif;
-    font-weight: bold;
-    border-radius: 3px;
-    text-transform: uppercase;
-  }
-  a.active,a:hover{
-    font-size: 30px;
-    transition: .9s;
-  }
-  .checkbtn{
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-  }
-  #check{
-    display: none;
-  }
-  
-  .seemore{
-     text-align: center;
-     /* margin: auto;  */
-     margin-left: 45%; 
-     padding-top: 1%;
-     padding-bottom: 1%;
-     margin-top: 1rem;
-     margin-bottom: 1rem;
-     border-radius: .6rem;
-     background-color: rgb(8, 202, 50);
-     color: white; 
-     cursor: pointer; 
-     padding-left: 1rem;
-     padding-right: 1rem;
-  }
-
-  .linec{
-    margin-top: 30rem;
-  }
- 
-
-
-  .download{
-    padding-top: 3rem;
-  }
-  .download button{
-    padding: .5rem;
-    background-color: #01CC32;
-    height: 3rem;
-    border-radius: 1rem;
-  }
-  button i{
-    padding-left: .5rem;
-  }
-  .lineh{
-    height: 3px;
-    width: 100%;
-    background-color: #01CC32;
-    float: right;
-    margin-top: 4rem;
-  }
-
-  .links i{
-    cursor: pointer;
-    float: right;
-    padding: .5rem;
-  }
-
-
-  .flex-container {
-    padding: 0%;
-    display: flex;
-    flex-wrap: wrap; 
-}
-  
-  .flex-container>div {
-    background-color:#01CC32;
-    width: 120px;
-    padding: .1rem;
-    margin-left: 30px;
-    height: 3rem;
-    margin-top: .5rem;
-    text-align: center;
-    font-size: 16px;
-  }
-
-  .aboutright1 p{
-    padding-left: 1.5em;
-
-  } 
-
-  .aboutleft1 p{
-    padding-top: 3rem;
-  }
-  .aboutright1 p{
-    padding-top: 0rem;
-  }
-  .lefth{
-    padding-top: 2rem;
-  }
-  .aboutleft1 p{
-    padding-top: 3rem;
-  }
-  
-
-  /* ABOUT PAGE */
-
-.refer{
-  background-color: #03010E;
-  color: #fff;
-  padding-left: 5rem;
-  padding-right: 3rem;
-  height: 38rem;
-  display: flex;
-  flex-basis: 100%;
-  justify-content: space-between;
-}
-
-.refer>div{
-    height: 100%;
-    flex-basis: 49.5%;
-    box-shadow: 0px 0px 40px black;
-
-}
-
-.referleft{
-  display: flex;
-  flex-direction: column;
-  padding: .5rem;
-  justify-content: space-between;
-}
-
-.referleft>div{
-  flex-basis: 49.5%;
-}
-
-.social{
-  display: flex;
-  flex-direction: column;
-  padding: .5rem;
-  justify-content: space-between;
-}
-.social>div{
-  /* All here*/
-}
-.top{
-  color: #01CC32;
-  flex-basis: 15%;
-}
-
-.socialup{
-  display: flex;
-  justify-content: space-between;
-  flex-basis: 38%;
-  padding: .5rem;
-}
-
-.socialup>div{
-  background-color: #01CC32;
-  padding-top: 2rem;
-  text-align: center;
-  flex-basis: 30%;
-}
-.socialdown{
-  flex-basis: 38%;
-}
-.socialdown{
-  display: flex;
-  justify-content: space-between;
-  flex-basis: 38%;
-  padding: .5rem;
-}
-
-.socialdown>div{
-  text-align: center;
-  padding-top: 2rem;
-  flex-basis: 30%;
-  background-color: #01CC32;
-}
-
-.generalskills{
-  display: flex;
-  flex-direction: column;
-  padding: .2rem;
-  justify-content: space-between;
-}
-
-.skillrig{
-  display: flex;
-  padding: .25rem;
-  flex-basis: 39.5%;
-  justify-content: space-between;
-}
-.skillrig>div{
-  box-shadow: 0px 0px 40px black;
-  flex-basis: 49.5%;  
-  text-align: center;
-  padding-top: 2rem;
-
-}
-
-.skilllef{
-  display: flex;
-  padding: .25rem;
-  flex-basis: 39.5%;
-  justify-content: space-between;
-}
-.skilllef>div{
-  padding-top: 2rem;
-  text-align: center;
-  box-shadow: 0px 0px 40px black;
-  flex-basis: 49.5%;
-}
-
-.generalrefer .abt{
-  margin-top: 6rem;
-  padding-right: 3rem;
-  line-height: 2rem;
-  
-}
-
-.tops{
-  color: #01CC32;
-  flex-basis: 15%;
-}
-
-.hd{
-  color: #01CC32;
-}
-
-  .photo{
-    height: 45%;
-  }
-
-  .portfolion p{
-    padding-left: -1rem;
-    padding-right: 2rem;
-
-  }
-
-  .rightcontact{
-    padding-left: 3rem;
-    padding-top: 1rem;
-    height: 100%;
-    width: 60%;
-  }
-
-  input[type="text"] {
-    border: 0;
-    background-color: #03010E;
-    border-bottom: 1px solid #01CC32;
-    outline: 0;
-    width: 85%;
-    padding-top: 1rem;
-    color: #fff;
-  }
- 
-  textarea{
-    border: 0;
-    background-color: #03010E;
-    border-bottom: 1px solid #01CC32;
-    outline: 0;
-    width: 85%;
-    height: 5rem;
-    padding-top: 1rem;
-
-    color: #fff;
-  }
-
-
-  
-  input[type="button"] {
-    border: .5px solid #01CC32;
-    background-color: #03010E;
-    border-bottom: 2px solid #01CC32;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    cursor: pointer;
-    width: 30%;
-    float: left;
-    margin-top: 1rem;
-    color:#fff;
-  }
-  input[type="button"]:hover{
-    box-shadow: 0px 0px 5px white;
-  }
-   .blogs{
-    padding-top: 4rem;
-    width: 100%;
-    height: fit-content;
-    background-color: #03010E;
-  } 
-  .viewmore{
-    background-color: #01CC32;
-    text-align: center;
-    align-self: center;
-    margin: auto;
-    height: 3rem;
-    padding: 1rem;
-    color: #fff;
-    cursor: pointer;
-    border-radius: .7rem;
-    font-family: 'Kanit', sans-serif;
-  }
-.viewmore:hover{
-  transition: 1s;
-  font-size: 16px;
-  box-shadow: 0px 0px 10px black;
-
-}
-.allblog{
-  display: flex;
-  height: 100%;
-  width: 100%;
-  padding-right: 2rem;
-
-}
-.allblog>div{
-  margin-top: 5rem;
-  flex-basis: 30%;
-  margin-left: 6%;
-  padding-right: 0rem;
-  align-self: auto;
-  height: 70%;
-  box-shadow: 0px 0px 10px black;
-}
-.allblog>div:hover{
-  box-shadow: 0px 0px 10px rgb(209, 206, 206);
-  transition: 1s;
-}
-.photo1{
-  width: 100%;
-  height: 15rem;
-}
-
-
-  .linec{
-    background-color: #01CC32;
-    margin-left: 4rem;
-    flex-basis: 100%;
-    margin-right: -3rem;
-    height: .1rem;
-  }
-  .allmainf{
-  
-    justify-content: space-between;
-    margin-left: 3rem;
-    display: flex;
-    padding-right: 7rem;
-    padding-top: .2rem;
-    flex-basis: 90%;
-  }
- .mainf p{
-    color: #fff;
-    display: inline;
-    padding-left: 2rem;
-  }
-  .mainf i{
-    padding-right: .2rem;
-  }
-
-
-  .iconsf p{
-    color: #fff;
-    display: inline;
-    padding-left: 1rem;
-
-  }
-
-
-  input[type="text"] {
-    border: 0;
-    background-color: #03010E;
-    outline: 0;
-    width: 85%;
-    padding-top: 1rem;
-    color: #fff;
-  }
-
-  .allcontact{
-    background-color: #03010E;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    display: flex;
-    flex-basis: 98;
-    flex-direction: column;
-
-  }
-  .linec{
-    margin-right: 5rem;
-    width: 90%;
-  }
-
-  .sdisc h3{
-    padding-bottom: .5rem;
-  }
-
-  .contact{
-    align-self: center;
-    padding: 3rem;
-    height: 78%;
-    display: flex;
-    box-shadow: 0px 0px 10px black;
-  }
-
-  .leftcontact{
-    padding: 3rem;
-    flex-basis: 50%;
-    height: 100%;
-  }
-  .rightcontact{
-    padding: 3rem;
-    flex-basis: 50%;
-    height: 100%;
-  }
-
- 
-  .linec{
-    margin-top: 1rem;
-  }
-  .pargraph{
-    width: 100%;
-    padding: 0;
-    font-size: 13px;
-    color: red;
-   }
-   #success{
-    font-size: 20px;
-    padding-top: 2rem;
-    padding-left: 2rem;
-    color:  #01CC32;
-   
-
-   }
-
-
-   
-  @media (max-width: 952px){
-
-    label.logo{
-      font-size: 30px;
-      padding-left: 50px;
-    }
-    .rightnav ul li a{
-      font-size: 16px;
-    }
-
-   
-
-
-  }
-
-  @media (max-width: 858px){
-
-    .footer{
-      padding-top: 0rem;
-      padding: 0rem;
-      margin: 0rem;
-      margin-top: -3rem;
-    }
- 
-    
-   .linec{
-    margin: 0;
-    width: 100%;
-    background-color:#01CC32
-   }
-
-    .refer{
-      padding: 1rem;
-      height: 60rem;
-      flex-direction: column-reverse;
-      justify-content: space-between;
-    }
-    
-    .refer>div{
-        flex-basis: 49.5%;    
-    }
-
-    .socialup>div{
-      /* text-align: left; */
-      padding-top: 3%;
-    }
-    .socialdown>div{
-       /* text-align: left; */
-       padding-top: 3%;
-    }
-    .skillrig>div{
-      /* text-align: left; */
-      padding-top: 3%;
-    }
-    .skilllef>div{
-      /* text-align: left; */
-      padding-top: 3%;
-    }
-    .generalrefer .abt{
-      margin-top: 2rem;
-      padding-right: 0rem;
-      line-height: 1.5rem;
-      
-    }
-
-    .seemore{
-      text-align: center;
-      /* margin: auto;  */
-      margin-left: 30%; 
-   }
-  .allcontact{
-    height: 40rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0;
-  }
-    .contact{
-      align-self: center;
-      flex-basis: 98%;
-      padding: 1rem;
-      width: 100%;
-      height: 78%;
-      display: flex;
-      flex-direction: column;
-      box-shadow: 0px 0px 10px black;
-    }
-    .leftcontact{
-      padding: .2rem;
-      /* flex-basis: 80%; */
-      line-height: 1.5rem;
-      width: 100%;
-      height: 100%;
-    }
-    .rightcontact{
-      margin: 0;
-      margin-top: -7rem;
-      padding: 0rem;
-      flex-basis: 100%;
-      width: 100%;
-    }
-     .pargraph{
-      width: 100%;
-     }
-    input[type="text"] {
-      padding-top: 1rem;
-      width: 100%;
-    }
-    /* input[type="button"] {
-      width: 100%;
-    } */
-    textarea{
-      width: 100%;
-    }
-
-    #ports{
-      height: fit-content;
-    }
-    #bolo{
-      height: fit-content;
-          }
-     .allblog{
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
-
-    }
-
-    .allblog>div{
-       margin-top: 0rem;
-      flex-basis: 80%;
-      max-height: fit-content;
-      box-shadow: 0px 0px 10px black;
-      padding-top: 5%;
-    }
-    .checkbtn{
-      display: block;
-    }
-    
-    ul{
-      position: fixed;
-      background:#03010E;
-      top: 80px;
-      right: -90%;
-      transition: all .5s;
-    }
-    .rightnav{
-      background-color: #03010E;
-    }
-    .rightnav ul li{
-      display: block;
-      padding: .8rem;
-      line-height: 18px;
-    }
-    .rightnav2 ul li a{
-      font-size: 5px;
-    }
-
-    #check:checked ~ ul{
-      right: -1rem;
-    }
-
-    label.logo{
-      color: white;
-      font-size: 30px;
-      line-height: 80px;
-      padding: 0 10px;
-      font-weight: bold;
-    }
-
-    .div1{
-      margin-top: 5rem;
-      display: flex;
-      flex-direction: column-reverse;
-      
-    }
-    .righth{
-      margin-top: 0rem;
-      height: 50%;
-      width: 100%;
-    }
-
-    p .hello{
-      width: 34rem;
-    }
-/* img{
-  padding: 1rem;
-} */
-.lefth{
-  padding: 1rem;
-  width: 100%;
-  max-height: fit-content;
-}
-
-.hd{
-  color: #01CC32;
-} 
-
-
-.allmainf{
-
-  display: flex;
-  flex-direction: column;
-  height: 5rem;
+  font-family: 'Kanit', sans-serif;
   margin: 0;
-  flex-basis: 100%;
-  justify-content: space-between;
   padding: 0;
 }
 
-.allmainf>div{
-  margin: 0;
-  flex-basis: 49%;
-}
-.mainf p{
-  padding-top: 1rem;
+.cli-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: fit-content;
+  max-height: 90vh;
+  margin-top: 2rem;
+  width: 80%;
+  overflow-wrap: break-word;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #222;
   color: #fff;
-  display: inline;
-  text-align: center;
-  padding-left: 1rem;
+  border-radius: 5px;
 }
-.iconsf p{
-  padding-left: 2.5rem;
-  text-align: center;
-
+.error{
+  color: red;
 }
-  }
-
-  @media (max-width: 550px){
-    .allblog{
-      display: grid;
-      grid-template-columns: repeat(1,1fr);
-    }
-   
-  }
-/* 
-  @media only screen and (min-width: 768px) and (max-width: 1000px) {
-    .name {
-      font-size: 55px;
-       }
-  .desc {
-    font-size: 30px;
-    }
-  .hello{
-    font-size: 34px;
-  }  
-
-  .download button {
-    font-size: 30px;
-    padding: 2rem;
-    height: inherit;
-  }
-  .links i {
-    font-size: xx-large;
+.command{
+  color: #43f009;
 }
-  } */
+.output-area {
+  width: 90%;
+  height: 100%;
+  padding: 4px;
+  overflow-y: auto;
+  text-overflow: clip;
+  overflow-wrap: break-word;
+  text-align: justify;
+  background-color: #222;
+  color: #fff;
+  font-family: 'Courier New', monospace; 
+  font-size: 14px;
+  white-space: pre;
+  scroll-margin-bottom: 999999px;
+  scroll-behavior: smooth;
+  word-break: break-all;
+  word-wrap: break-word; /* Allow long words to break and wrap to the next line */
+}
+
+.just{
+  word-wrap: break-word;
+  word-break: break-all;
+  hyphens: auto;
+  text-align: justify;
+  width: 12vh; /* Consider adjusting this value */
+  white-space: inherit;
+  
+}
+
+a{
+  color: skyblue;
+}
+
+/* Ensure the scroll container always scrolls to the bottom */
+
+.skills{
+  color: chocolate;
+}
+.cv {
+  border: 1px dashed #23ef2d;
+  padding: 3px;
+  border-radius: 5px;
+  margin-top: 5rem;
+}
+
+.cv{
+  text-decoration: none;
+}
+
+.input-area {
+  display: flex;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  color: #fff;
+  width: 90%; 
+}
+
+input[type="text"] {
+  color: #43f009;
+  border: none;
+  background-color: #222;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+  
+}
+
+input[type="text"]:focus {
+  background-color: #222;
+}
+
+.just{
+  width: "10wh";
+  text-align: justify;
+}
