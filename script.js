@@ -10,7 +10,7 @@ document.getElementById('command-input').addEventListener('keypress', function(e
                 displayOutput(' \n \nI have worked on several web projects, focusing on front-end development and responsive design. \n \n <b class="skills">Karisimbi tech solutions</b> <i>Jun 15, 2023 - Present</i> Remotely working as a front-end developer. \n <b class="skills">Andela Rwanda </b> <i>Nov 21, 2022 - Sept 15 2023</i> I was a full-stack developer at Andela.');
                 break;
             case 'skills':
-                displayOutput('\n \n<b>My skills including, but not limited to, </b> \n \n - <i class="skills">Nextjs, Reactjs, React Native, Angular</i> \n - <i class="skills">Typescript, JavaScript</i> \n - <i class="skills">Flutter, Dart, Java, C++</i> \n - <i class="skills">HTML, CSS, Tailwind, Angular material</i> \n - <i class="skills">Git, GitHub</i>');
+                displayOutput('\n \n<b>My skills including, but not limited to, </b> \n \n - <i class="skills">Nextjs, Reactjs, React Native, Angular</i> \n - <i class="skills">Typescript, JavaScript</i> \n - <i class="skills">Flutter, Dart, Java, C++</i> \n - <i class="skills">HTML, CSS, Tailwind, Angular material</i> \n - <i class="skills">Git, GitHub</i> \n - <i class="skills">IT Essentials</i>');
                 break;
             case 'projects':
                 displayOutput('\n \n<b>I worked on various projects including, but not limited to,</b> \n \n - <a href="https://xanahealth.online">XanaHealth</a> \n - <a href="https://unrivaled-muffin-aabb5d.netlify.app/">Komparas</a>'); 
@@ -28,7 +28,7 @@ document.getElementById('command-input').addEventListener('keypress', function(e
                 clearOutput();
                 break;
             case 'help':
-                displayOutput('\n \nAvailable commands:\n <i class="command">whoami</i> - Display information about the developer\n <i class="command">experience</i> - Display information about the developer\'s work experience\n <i class="command">skills</i> - Display information about the developer\'s skills\n <i class="command">socials</i> - Display links to the developer\'s projects or profiles\n <i class="command">projects</i> - Display information about the developer\'s projects\n <i class="command">contact</i> - Display contact information\n <i class="command">cv</i> - Display the developer\'s CV\n <i class="command">clear</i> - Clear the output area\n <i class="command">help</i> - Display available commands');
+                displayOutput('\n \nAvailable commands:\n <i class="command">whoami</i> - Display information about Me\n <i class="command">experience</i> - Display information My work experience\n <i class="command">skills</i> - Display information about My skills\n <i class="command">socials</i> - Display links to the My projects or profiles\n <i class="command">projects</i> - Display information about My projects\n <i class="command">contact</i> - Display contact information\n <i class="command">cv</i> - Display the My CV\n <i class="command">clear</i> - Clear the output area\n <i class="command">help</i> - Display available commands');
                 break;
             default:
                 displayOutput('\n \nUnknown command. Type "help" for available commands.');
